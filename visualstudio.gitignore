@@ -144,6 +144,7 @@ ipch/
 *.psess
 *.vsp
 *.vspx
+*.vsidx
 *.sap
 
 # Visual Studio Trace Files
