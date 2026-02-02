@@ -43,7 +43,8 @@ Krav:
 -Ingen if / else.
 -Skriv kommentar om varje rad (ovanför raden).
  */
-/* Skriv textrad
+/*
+// Skriv textrad
 Console.Write("Ange pris på äpplen: ");
 // Be användaren mata in priset och spara varibel
 string priceInput = Console.ReadLine();
@@ -62,10 +63,14 @@ Console.WriteLine("Antal äpplen: " + numberInt);
 // Räkna ut totalsumman som decimal variabel
 decimal TotalSum = price * numberInt;
 // Räkna ut momsen som decimal variabel
-decimal VAT = TotalSum * 0.25E2m;
+decimal VAT = TotalSum * 0.25m;
+TotalSum = TotalSum + VAT;
+// Avrunda till två decimaler
+TotalSum = Math.Round(TotalSum, 2);
+VAT = Math.Round(VAT, 2);
 // Skriv ut kvitto med totalsumma och moms
 Console.WriteLine("Kvitto\n======\nTotalsumma: " + TotalSum + " kr\n" + "Moms: " + VAT + " kr");
-*/
+ */
 
 /*  Labb 1 - övning 3
 Skapa ett Console-program som:
@@ -117,7 +122,8 @@ Krav:
 - Ingen if / else
 - Kommentar ovanför varje rad */
 
-/* Skriv textrad
+/*
+// Skriv textrad
 Console.Write("Ange pris per smoothie i kronor: ");
 // Be användaren mata in pris
 string priceInput = Console.ReadLine();
@@ -131,8 +137,9 @@ string numberInput = Console.ReadLine();
 int.TryParse(numberInput, out int number);
 // Räkna ut totalpriset och spara i variabel
 decimal totalPrice = price * number;
+totalPrice = Math.Round(totalPrice, 2);
 // Skriv ut resultatet
-Console.WriteLine("Totalpriset för " + number + " smoothies är: " + totalPrice.ToString() + " kronor");
+Console.WriteLine("Totalpriset för " + number + " smoothies är: " + totalPrice.ToString() + " kronor"); 
 */
 
 /*  Labb 1 - övning 4 
@@ -150,6 +157,7 @@ Krav:
 - Alla värden ska lagras i variabler.
 - Skriv kommentar om varje rad (ovanför raden) */
 
+/*
 // Skriv textrad
 Console.Write("Ange priset för frukost: ");
 // Be användaren mata in pris för frukost
@@ -170,6 +178,7 @@ string dinnerInput = Console.ReadLine();
 decimal dinner = Convert.ToDecimal(dinnerInput);
 // Beräkna den genomsnittliga kostnaden och spara i variabel
 decimal averageCost = (breakfast + lunch + dinner) / 3;
+// Avrunda till två decimaler
 averageCost = Math.Round(averageCost, 2);
 // Skriv ut resultatet
-Console.WriteLine("Den genomsnittliga kostnaden för måltiderna är: " + averageCost + " kronor");
+Console.WriteLine("Den genomsnittliga kostnaden för måltiderna är: " + averageCost + " kronor");*/
