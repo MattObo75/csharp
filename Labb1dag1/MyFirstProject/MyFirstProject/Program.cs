@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/* Labb 1 - övning 1
 Console.Write("Namn: ");
 string firstName = Console.ReadLine();
 Console.Write("Age: ");
@@ -25,4 +25,32 @@ decimal breakfast = Convert.ToDecimal(breakfastInput);
 int priceOre = (int)(breakfast * 100);
 Console.WriteLine("Pris i öre: " + priceOre);
 Console.WriteLine("Pris i öre: {0}", priceOre); 
-Console.WriteLine($"Pris i öre: {priceOre}");
+Console.WriteLine($"Pris i öre: {priceOre}"); 
+
+Labb 1 - övning 2
+Skapa ett Console-program som:
+1.Ber användaren att ange:
+-priset på en vara.
+-hur många varor som köps.
+2. Räknar ut:
+-Totalsumma.
+-moms (25 %)
+3. Skriver ut ett enkelt kvitto
+Krav:
+-Använd decimal för pengar.
+-Använd int för antal.
+-Använd TryParse.
+-Ingen if / else.
+-Skriv kommentar om varje rad (ovanför raden).
+ */
+Console.Write("Ange pris på äpplen: ");
+string priceInput = Console.ReadLine();
+decimal price = Convert.ToDecimal(priceInput);
+Console.Write("Ange antal äpplen: ");
+string numberInput = Console.ReadLine();
+int.TryParse(numberInput, out int numberInt);
+Console.WriteLine("Pris på äpplen: " + price);
+Console.WriteLine("Antal äpplen: " + numberInt);
+decimal TotalSum = price * numberInt;
+decimal VAT = TotalSum * 0.25m;
+Console.WriteLine("Kvitto\n======\nTotalsumma: " + TotalSum + " kr\n" + "Moms: " + VAT + " kr");
