@@ -1,0 +1,15 @@
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\bin\Debug\net10.0\MyFirstProject.exe
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\bin\Debug\net10.0\MyFirstProject.deps.json
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\bin\Debug\net10.0\MyFirstProject.runtimeconfig.json
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\bin\Debug\net10.0\MyFirstProject.dll
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\bin\Debug\net10.0\MyFirstProject.pdb
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.AssemblyInfoInputs.cache
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.AssemblyInfo.cs
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.csproj.CoreCompileInputs.cache
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.sourcelink.json
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.dll
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\refint\MyFirstProject.dll
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.pdb
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\MyFirstProject.genruntimeconfig.cache
+X:\source\c#\Labb1dag1\MyFirstProject\MyFirstProject\obj\Debug\net10.0\ref\MyFirstProject.dll
