@@ -43,14 +43,25 @@ Krav:
 -Ingen if / else.
 -Skriv kommentar om varje rad (ovanför raden).
  */
+// Skriv textrad
 Console.Write("Ange pris på äpplen: ");
+// Be användaren mata in priset och spara varibel
 string priceInput = Console.ReadLine();
+// Konertera strängen till decimal
 decimal price = Convert.ToDecimal(priceInput);
+// Skriv textrad
 Console.Write("Ange antal äpplen: ");
+// Be användaren mata in antal och spara variabel
 string numberInput = Console.ReadLine();
+// Konvertera strängen till int
 int.TryParse(numberInput, out int numberInt);
+// Skriv ut priset på äpplen
 Console.WriteLine("Pris på äpplen: " + price);
+// Skriv ut antal äpplen
 Console.WriteLine("Antal äpplen: " + numberInt);
+// Räkna ut totalsumman som decimal variabel
 decimal TotalSum = price * numberInt;
+// Räkna ut momsen som decimal variabel
 decimal VAT = TotalSum * 0.25m;
+// Skriv ut kvitto med totalsumma och moms
 Console.WriteLine("Kvitto\n======\nTotalsumma: " + TotalSum + " kr\n" + "Moms: " + VAT + " kr");
