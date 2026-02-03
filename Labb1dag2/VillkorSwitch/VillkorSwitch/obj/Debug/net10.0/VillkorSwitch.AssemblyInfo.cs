@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VillkorSwitch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d4e779ffbcf7197f4899cfeb32660d29d712859")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+311774c482a2e7a05217f87688cfcec2deaa5057")]
 [assembly: System.Reflection.AssemblyProductAttribute("VillkorSwitch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VillkorSwitch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -314,65 +314,65 @@ Om användaren väljer Kontrollera ord ska programmet:
 
 Om användaren väljer Avsluta ska programmet skriva ut ett avslutsmeddelande och avslutas.
 */
-Console.WriteLine("Välj alternativ:");
-Console.WriteLine("1 - Kontrollera temperatur");
-Console.WriteLine("2 - Kontrollera ord");
-Console.WriteLine("3 - Avsluta");
-Console.Write("Ditt val: ");
+Console.WriteLine("Välj alternativ:");              // Visa menyalternativ för användaren
+Console.WriteLine("1 - Kontrollera temperatur");    // Alternativ 1
+Console.WriteLine("2 - Kontrollera ord");           // Alternativ 2
+Console.WriteLine("3 - Avsluta");                   // Alternativ 3
+Console.Write("Ditt val: ");                        // Be användaren göra ett val
 
-string val = Console.ReadLine();
+string val = Console.ReadLine(); // Läs användarens val
 
-switch (val)
+switch (val)    // Switch baserat på användarens val
 {
     case "1":
-        Console.Write("Ange en temperatur i grader Celsius: ");
-        string input = Console.ReadLine();
+        Console.Write("Ange en temperatur i grader Celsius: "); // Be användaren mata in en temperatur
+        string input = Console.ReadLine();                      // Läs inmatningen
 
-        if (double.TryParse(input, out double temperatur))
+        if (double.TryParse(input, out double temperatur))      // Försök konvertera inmatningen till ett numeriskt värde
         {
-            if (temperatur < 10)
+            if (temperatur < 10)            // Om temperaturen är under 10
             {
-                Console.WriteLine("Kallt");
+                Console.WriteLine("Kallt"); // Skriv ut "Kallt"
             }
-            else if (temperatur <= 25)
+            else if (temperatur <= 25)      // Om temperaturen är mellan 10 och 25
             {
-                Console.WriteLine("Lagom");
+                Console.WriteLine("Lagom"); // Skriv ut "Lagom"
             }
-            else
+            else                            // Om temperaturen är över 25
             {
-                Console.WriteLine("Varmt");
+                Console.WriteLine("Varmt"); // Skriv ut "Varmt"
             }
         }
-        else
+        else // Om inmatningen inte är numerisk
         {
-            Console.WriteLine("Ogiltig temperaturinmatning");
+            Console.WriteLine("Ogiltig temperaturinmatning"); // Skriv ut felmeddelande
         }
         break;
 
     case "2":
-        Console.Write("Skriv in ett ord: ");
-        string ord = Console.ReadLine();
+        Console.Write("Skriv in ett ord: "); // Be användaren skriva in ett ord
+        string ord = Console.ReadLine();     // Läs inmatningen
 
-        ord = ord.Trim().ToUpper();
+        ord = ord.Trim().ToUpper();          // Ta bort blanksteg och konvertera till versaler
 
-        Console.WriteLine($"Ordet innehåller {ord.Length} tecken.");
+        Console.WriteLine($"Ordet innehåller {ord.Length} tecken."); // Skriv ut antal tecken i ordet
 
-        if (ord.Length < 5)
+        if (ord.Length < 5)                       // Om ordet har färre än 5 tecken
         {
-            Console.WriteLine("Ordet är kort.");
+            Console.WriteLine("Ordet är kort.");  // Skriv ut "Ordet är kort."
         }
-        else
+        else // Om ordet har 5 tecken eller fler
         {
-            Console.WriteLine("Ordet är långt.");
+            Console.WriteLine("Ordet är långt."); // Skriv ut "Ordet är långt."
         }
         break;
 
     case "3":
-        Console.WriteLine("Programmet avslutas!");
+        Console.WriteLine("Programmet avslutas!"); // Skriv ut avslutsmeddelande
         break;
 
     default:
-        Console.WriteLine("Ogiltigt val");
+        Console.WriteLine("Ogiltigt val"); // Skriv ut "Ogiltigt val" för ogiltig inmatning
         break;
 }
 
