@@ -1,0 +1,15 @@
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\bin\Debug\net10.0\VillkorSwitch.exe
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\bin\Debug\net10.0\VillkorSwitch.deps.json
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\bin\Debug\net10.0\VillkorSwitch.runtimeconfig.json
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\bin\Debug\net10.0\VillkorSwitch.dll
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\bin\Debug\net10.0\VillkorSwitch.pdb
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.AssemblyInfoInputs.cache
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.AssemblyInfo.cs
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.csproj.CoreCompileInputs.cache
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.sourcelink.json
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.dll
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\refint\VillkorSwitch.dll
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.pdb
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\VillkorSwitch.genruntimeconfig.cache
+X:\source\c#\Labb1dag2\VillkorSwitch\VillkorSwitch\obj\Debug\net10.0\ref\VillkorSwitch.dll

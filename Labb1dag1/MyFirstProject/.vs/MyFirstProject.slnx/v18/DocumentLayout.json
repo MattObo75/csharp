@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "X:\\source\\c#\\Labb1dag1\\MyFirstProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{643352DB-897C-85DA-D7F9-D817B75E7B5F}|MyFirstProject\\MyFirstProject.csproj|x:\\source\\c#\\labb1dag1\\myfirstproject\\myfirstproject\\myfirstproject.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{643352DB-897C-85DA-D7F9-D817B75E7B5F}|MyFirstProject\\MyFirstProject.csproj|solutionrelative:myfirstproject\\myfirstproject.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{643352DB-897C-85DA-D7F9-D817B75E7B5F}|MyFirstProject\\MyFirstProject.csproj|x:\\source\\c#\\labb1dag1\\myfirstproject\\myfirstproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{643352DB-897C-85DA-D7F9-D817B75E7B5F}|MyFirstProject\\MyFirstProject.csproj|solutionrelative:myfirstproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MyFirstProject",
+              "DocumentMoniker": "X:\\source\\c#\\Labb1dag1\\MyFirstProject\\MyFirstProject\\MyFirstProject.csproj",
+              "RelativeDocumentMoniker": "MyFirstProject\\MyFirstProject.csproj",
+              "ToolTip": "X:\\source\\c#\\Labb1dag1\\MyFirstProject\\MyFirstProject\\MyFirstProject.csproj",
+              "RelativeToolTip": "MyFirstProject\\MyFirstProject.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-03T08:07:01.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "X:\\source\\c#\\Labb1dag1\\MyFirstProject\\MyFirstProject\\Program.cs",
               "RelativeDocumentMoniker": "MyFirstProject\\Program.cs",
