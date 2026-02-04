@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\bin\Debug\net10.0\DebugLoop.exe
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\bin\Debug\net10.0\DebugLoop.deps.json
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\bin\Debug\net10.0\DebugLoop.runtimeconfig.json
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\bin\Debug\net10.0\DebugLoop.dll
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\bin\Debug\net10.0\DebugLoop.pdb
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.AssemblyInfo.cs
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.sourcelink.json
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.dll
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\refint\DebugLoop.dll
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.pdb
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\DebugLoop.genruntimeconfig.cache
+X:\source\c#\Labbar\Dag3\DebugLoop\DebugLoop\obj\Debug\net10.0\ref\DebugLoop.dll

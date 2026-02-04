@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Dag3\\DebugLoop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{557AB0CC-FFDB-4F5C-9719-C4DD2AF819DB}|DebugLoop\\DebugLoop.csproj|x:\\source\\c#\\labbar\\dag3\\debugloop\\debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{557AB0CC-FFDB-4F5C-9719-C4DD2AF819DB}|DebugLoop\\DebugLoop.csproj|solutionrelative:debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8CB3346-1EC2-42F1-36C7-33B34C443388}|DebugLoop\\DebugLoop.csproj|x:\\source\\c#\\labbar\\dag3\\debugloop\\debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8CB3346-1EC2-42F1-36C7-33B34C443388}|DebugLoop\\DebugLoop.csproj|solutionrelative:debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "DebugLoop\\Program.cs",
               "ToolTip": "X:\\source\\c#\\Labbar\\Dag3\\DebugLoop\\DebugLoop\\Program.cs",
               "RelativeToolTip": "DebugLoop\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwEoAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T08:23:11.276Z",
               "EditorCaption": ""
