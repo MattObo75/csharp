@@ -298,7 +298,7 @@ Krav:
 - Använd en räknare (i) för att hålla koll på vilket namn som matchar varje poäng.
 - Använd en if-sats för att filtrera de studenter som har 70 poäng eller mer.
 - Skriv ut varje student som klarade kursen.
-*/
+
 
 List<string> names = new List<string>() { "Kalle", "Bertil", "Maria", "Tommy", "Eva", "Mattias" }; // Lista med studentnamn
 List<int> scores = new List<int>() { 85, 62, 90, 45, 78, 70 }; // Lista med poäng
@@ -313,3 +313,123 @@ foreach (string name in names)
     }
     i++; // Öka räknaren för nästa iteration
 }
+*/
+/* Extrauppgift Övning 1
+1. Be användaren skriva sitt namn.
+2. Använd Trim() för att ta bort onödiga mellanslag.
+3. Kontrollera:
+	- Om namnet är tomt: skriv “Inget namn angivet” och avsluta.
+4. Be användaren skriva in sin ålder.
+5. Använd TryParse för att kontrollera att åldern är numerisk.
+6. Med hjälp av if/else skriv ut:
+	- Under 18 är: “Du är minderårig”
+	- 18–64 år: “Du är vuxen”
+	- 65 år eller äldre: “Du är pensionär”
+7. Skriv även ut:
+	- Namnet i versaler (ToUpper())
+	- Antal tecken i namnet (Length)
+
+- Kommentera koden. 
+
+Console.Write("Ange ditt namn: ");          // Be användaren skriva sitt namn
+string name = Console.ReadLine().Trim().ToUpper();    // Läs in namnet och ta bort onödiga mellanslag
+
+
+if (string.IsNullOrEmpty(name))             // Kontrollera om namnet är tomt
+{
+    Console.WriteLine("Inget namn angivet"); // Skriv ut meddelande och avsluta
+    return;
+}
+Console.Write("Ange din ålder: ");         // Be användaren skriva in sin ålder
+string ageInput = Console.ReadLine();      // Läs in åldern som sträng
+
+if (string.IsNullOrEmpty(ageInput))
+{
+    Console.WriteLine("Ingen ålder angiven"); // Skriv ut meddelande och avsluta
+    return;
+}
+
+if (int.TryParse(ageInput, out int age))   // Försök att konvertera åldern till heltal
+{
+    if (age < 18)                          // Kontrollera om användaren är minderårig
+    {
+        Console.WriteLine($"Hej {name}, du är minderårig. Längden på ditt namn är {name.Length}.");
+    }
+    else if (age >= 18 && age <= 64)       // Kontrollera om användaren är vuxen
+    {
+        Console.WriteLine($"Hej {name}, du är vuxen. Längden på ditt namn är {name.Length}.");
+    }
+    else                                   // Annars är användaren pensionär
+    {
+        Console.WriteLine($"Hej {name}, du är pensionär. Längden på ditt namn är {name.Length}.");
+    }
+}
+else                                       // Om konverteringen misslyckas
+{
+    Console.WriteLine("Felaktig ålder! Vänligen ange ett numeriskt värde.");
+    return;
+}
+*/
+
+/* Extrauppgift Övning 2
+1. Be användaren mata in ett poängresultat mellan 0 och 100.
+2. Använd TryParse för att kontrollera inmatningen.
+3. Om talet är utanför intervallet 0–100: skriv “Ogiltigt poängresultat”.
+4. Annars:
+	- Dela poängen med 10 (heltalsdivision).
+	- Använd switch för att sätta betyg:
+		10: A
+		9: B
+		8: C
+		7: D
+		6: E
+		0–5: F
+5. Skriv ut både poängen och betyget.
+6. Kommentera koden.
+
+
+Console.Write("Ange ditt poängresultat (0-100): "); // Be användaren mata in ett poängresultat
+string input = Console.ReadLine();                  // Läs in poängresultatet som sträng
+
+if (int.TryParse(input, out int score))             // Försök att konvertera inmatningen till heltal
+{
+    if (score < 0 || score > 100)                   // Kontrollera om poängen är inom giltigt intervall
+    {
+        Console.WriteLine("Ogiltigt poängresultat"); // Skriv ut meddelande om ogiltigt resultat
+    }
+    else
+    {
+        int gradeValue = score / 10;            // Dela poängen med 10 för att få betygsvärdet
+        string grade;                           // Variabel för betyget
+        switch (gradeValue)                     // Använd switch för att bestämma betyget
+        {
+            case 10:
+                grade = "A";
+                break;
+            case 9:
+                grade = "B";
+                break;
+            case 8:
+                grade = "C";
+                break;
+            case 7:
+                grade = "D";
+                break;
+            case 6:
+                grade = "E";
+                break;
+            default:
+                grade = "F";
+                break;
+        }
+        Console.WriteLine($"Poäng: {score}, Betyg: {grade}"); // Skriv ut poängen och betyget
+    }
+}
+else                                            // Om konverteringen misslyckas
+{
+    Console.WriteLine("Felaktig inmatning! Vänligen ange ett numeriskt värde.");
+}
+*/
+/* Extrauppgift Övning 3
+
+*/
