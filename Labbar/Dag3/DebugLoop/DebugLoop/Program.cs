@@ -431,5 +431,39 @@ else                                            // Om konverteringen misslyckas
 }
 */
 /* Extrauppgift Övning 3
-
+1. Skapa två fördefinierade värden i koden:
+	- Användarnamn: "admin"
+	- Lösenord: "1234"
+2. Be användaren mata in ett användarnamn.
+3. Använd Trim() och ToLower() på inmatningen.
+4. Be användaren mata in ett lösenord.
+5. Kontrollera med if/else:
+	- Om användarnamn och lösenord stämmer: “Inloggning lyckades”
+	- Om användarnamnet är fel men lösenordet rätt: “Fel användarnamn”
+	- Om användarnamnet är rätt men lösenordet fel: “Fel lösenord”
+	- Om båda är fel: “Fel användarnamn och lösenord”
+6. Kommentera koden.
 */
+string correctUsername = "admin"; // Fördefinierat användarnamn
+string correctPassword = "1234";  // Fördefinierat lösenord
+Console.Write("Ange användarnamn: "); // Be användaren mata in ett användarnamn
+string inputUsername = Console.ReadLine().Trim().ToLower(); // Läs in och bearbeta användarnamnet
+Console.Write("Ange lösenord: "); // Be användaren mata in ett lösenord
+string inputPassword = Console.ReadLine(); // Läs in lösenordet
+if (inputUsername == correctUsername && inputPassword == correctPassword) // Kontrollera om båda är rätt
+{
+    Console.WriteLine("Inloggning lyckades"); // Skriv ut framgångsmeddelande
+}
+else if (inputUsername != correctUsername && inputPassword == correctPassword) // Fel användarnamn
+{
+    Console.WriteLine("Fel användarnamn"); // Skriv ut felmeddelande för användarnamn
+}
+else if (inputUsername == correctUsername && inputPassword != correctPassword) // Fel lösenord
+{
+    Console.WriteLine("Fel lösenord"); // Skriv ut felmeddelande för lösenord
+}
+else // Båda är fel
+{
+    Console.WriteLine("Fel användarnamn och lösenord"); // Skriv ut felmeddelande för båda
+}
+Console.ReadLine();
