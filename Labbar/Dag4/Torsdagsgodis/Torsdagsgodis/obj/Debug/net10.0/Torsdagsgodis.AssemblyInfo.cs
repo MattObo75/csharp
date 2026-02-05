@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Torsdagsgodis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+479875d9ffcb81debb07671e16da2ec5018c5dfb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f431eea978803ded0e92cc7ff15770a71fd8d2d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Torsdagsgodis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Torsdagsgodis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

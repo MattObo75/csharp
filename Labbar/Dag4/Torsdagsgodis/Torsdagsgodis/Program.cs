@@ -58,17 +58,25 @@ Använd:
 - Take(5)
 */
 
-string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";
-List<string> allLines = new List<string>();
-
-using (StreamReader reader = new StreamReader(filePath))
+try
 {
-    string line;
-    while ((line = reader.ReadLine()) != null)
+    // Sökväg till textfilen
+    string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";
+
+    // Lista som lagrar alla rader från filen
+    List<string> allLines = new List<string>();
+
+    // Läs filen säkert med StreamReader
+    using (StreamReader reader = new StreamReader(filePath))
     {
-        allLines.Add(line);
+        string line;
+        while ((line = reader.ReadLine()) != null)
+        {
+            allLines.Add(line);
+        }
     }
 
+    // Lista för icke-tomma rader
     List<string> validCountries = new List<string>();
     foreach (string country in allLines)
     {
@@ -78,30 +86,62 @@ using (StreamReader reader = new StreamReader(filePath))
         }
     }
 
+    // Lista som lagrar rika länder (namn + BNP per capita)
     List<(string Country, double GDPPerCapita)> richCountries = new List<(string, double)>();
-    foreach (string country in allLines)
+
+    foreach (string country in validCountries)
     {
+        // Dela upp raden med semikolon
         string[] parts = country.Split(';');
+
+        // Säkerställ korrekt format
         if (parts.Length == 4)
         {
             string name = parts[0];
+
+            // Försök tolka siffror
             if (double.TryParse(parts[1], out double population) && double.TryParse(parts[2], out double gdp))
             {
-                double gdpPerCapita = gdp / population;
-                if (gdpPerCapita > 50000) // Exempelvärde
+                // Skydda mot division med noll
+                if (population > 0)
                 {
-                    richCountries.Add((name, gdpPerCapita));
+                    double gdpPerCapita = gdp / population;
+
+                    if (gdpPerCapita > 50000)
+                    {
+                        richCountries.Add((name, gdpPerCapita));
+                    }
                 }
             }
         }
     }
-    // Sortera resultatet i fallande ordning.
-    // Visa de 5 rikaste länderna per invånare.
-    var topRichCountries = richCountries.OrderByDescending(c => c.GDPPerCapita).Take(5);
+
+    // Sortera och välj topp 5
+    var topRichCountries =
+        richCountries.OrderByDescending(c => c.GDPPerCapita).Take(5);
+
     Console.WriteLine("De 5 rikaste länderna per invånare:");
     Console.WriteLine("-----------------------------------");
+
     foreach (var country in topRichCountries)
     {
         Console.WriteLine($"{country.Country}: {country.GDPPerCapita:C}");
     }
 }
+// Fångar fel om filen inte hittas
+catch (FileNotFoundException)
+{
+    Console.WriteLine("Fel: Filen hittades inte. Kontrollera sökvägen.");
+}
+// Fångar fel vid åtkomst (t.ex. saknade rättigheter)
+catch (UnauthorizedAccessException)
+{
+    Console.WriteLine("Fel: Du saknar behörighet att läsa filen.");
+}
+// Fångar alla andra oväntade fel
+catch (Exception ex)
+{
+    Console.WriteLine("Ett oväntat fel inträffade:");
+    Console.WriteLine(ex.Message);
+}
+
