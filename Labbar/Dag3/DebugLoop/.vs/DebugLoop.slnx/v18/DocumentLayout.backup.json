@@ -1,37 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Dag3\\DebugLoop\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F8CB3346-1EC2-42F1-36C7-33B34C443388}|DebugLoop\\DebugLoop.csproj|x:\\source\\c#\\labbar\\dag3\\debugloop\\debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8CB3346-1EC2-42F1-36C7-33B34C443388}|DebugLoop\\DebugLoop.csproj|solutionrelative:debugloop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\git\\source\\c#\\Labbar\\Dag3\\DebugLoop\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Dag3\\DebugLoop\\DebugLoop\\Program.cs",
-              "RelativeDocumentMoniker": "DebugLoop\\Program.cs",
-              "ToolTip": "X:\\source\\c#\\Labbar\\Dag3\\DebugLoop\\DebugLoop\\Program.cs",
-              "RelativeToolTip": "DebugLoop\\Program.cs",
-              "ViewState": "AgIAALkBAAAAAAAAAAAgwNEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T08:23:11.276Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
