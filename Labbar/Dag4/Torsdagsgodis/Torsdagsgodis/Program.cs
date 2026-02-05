@@ -56,7 +56,6 @@ GDP per capita = GDP / Population
 Använd:
 - OrderByDescending(...)
 - Take(5)
-*/
 
 try
 {
@@ -116,15 +115,15 @@ try
         }
     }
 
-    // Sortera och välj topp 5
-    var topRichCountries =
-        richCountries.OrderByDescending(c => c.GDPPerCapita).Take(5);
+    // Sortera fallande och välj topp 5
+    var topRichCountries = richCountries.OrderByDescending(c => c.GDPPerCapita).Take(5);
 
     Console.WriteLine("De 5 rikaste länderna per invånare:");
     Console.WriteLine("-----------------------------------");
 
-    foreach (var country in topRichCountries)
+    foreach (var country in topRichCountries)   // stega igenom de 5 rikaste länderna
     {
+        // skriver ut namnet på landet och dess BNP per capita i valutaformat
         Console.WriteLine($"{country.Country}: {country.GDPPerCapita:C}");
     }
 }
@@ -139,6 +138,128 @@ catch (UnauthorizedAccessException)
     Console.WriteLine("Fel: Du saknar behörighet att läsa filen.");
 }
 // Fångar alla andra oväntade fel
+catch (Exception ex)
+{
+    Console.WriteLine("Ett oväntat fel inträffade:");
+    Console.WriteLine(ex.Message);
+}
+*/
+/*
+Övning 2
+Analysera valutor i filen och ta reda på:
+- Hur många länder använder varje valuta.
+- Vilken valuta som används av flest länder.
+- Lista alla länder som använder den valutan.
+Krav
+Använd:
+- GroupBy
+- Count
+- Where
+- Minst en lösning med foreach
+- Skriv ut resultatet på ett tydligt sätt i konsolen
+- Hantera felaktiga data utan att programmet kraschar.
+- Kommentera koden
+*/
+
+try
+{
+    string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";
+
+    // Lista som lagrar land och valuta
+    List<(string Country, string Currency)> countries = new();
+
+    // StreamReader används för att läsa filen rad för rad
+    using (StreamReader reader = new StreamReader(filePath))
+    {
+        // Läs och ignorera första raden (rubriker)
+        reader.ReadLine();
+
+        string line;
+
+        while ((line = reader.ReadLine()) != null)
+        {
+            // Hoppa över tomma rader
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            string[] parts = line.Split(';');
+
+            // Kontrollera korrekt format
+            if (parts.Length != 4)
+                continue;
+
+            string country = parts[0].Trim();
+            string currency = parts[3].Trim();
+
+            // Kontrollera att data inte är tom
+            if (!string.IsNullOrWhiteSpace(country) &&
+                !string.IsNullOrWhiteSpace(currency))
+            {
+                countries.Add((country, currency));
+            }
+        }
+    }
+
+    // Gruppera länder efter valuta
+    var currencyGroups = countries
+        .GroupBy(c => c.Currency)
+        .Select(group => new
+        {
+            Currency = group.Key,
+            Count = group.Count(),
+            Countries = group.Select(c => c.Country).ToList()       // var topRichCountries = richCountries.OrderByDescending(c => c.GDPPerCapita);
+        })
+        .OrderByDescending(group => group.Count) // sortering i fallande ordning
+        .ToList();
+
+    // Skriv ut antal länder per valuta
+    Console.WriteLine("Antal länder per valuta:");
+    Console.WriteLine("------------------------");
+
+    foreach (var group in currencyGroups) // foreach-lösning
+    {
+        if (group.Count > 1) {
+            Console.WriteLine($"{group.Currency}: {group.Count} länder");
+        }
+        else
+        {
+            Console.WriteLine($"{group.Currency}: {group.Count} land");
+        }
+
+    }
+
+    // Ta reda på vilken valuta som används av flest länder
+    int maxCount = currencyGroups.Max(g => g.Count);
+
+    var mostUsedCurrencies = currencyGroups
+        .Where(g => g.Count == maxCount)
+        .ToList();
+
+    Console.WriteLine();
+    Console.WriteLine("Valuta som används av flest länder:");
+    Console.WriteLine("----------------------------------");
+
+    foreach (var currency in mostUsedCurrencies)
+    {
+        Console.WriteLine($"{currency.Currency}: ({currency.Count} länder)");
+        Console.WriteLine("Länder:");
+
+        foreach (string country in currency.Countries)
+        {
+            Console.WriteLine($"- {country}");
+        }
+
+        Console.WriteLine();
+    }
+}
+catch (FileNotFoundException)
+{
+    Console.WriteLine("Fel: Filen hittades inte.");
+}
+catch (UnauthorizedAccessException)
+{
+    Console.WriteLine("Fel: Åtkomst till filen nekades.");
+}
 catch (Exception ex)
 {
     Console.WriteLine("Ett oväntat fel inträffade:");

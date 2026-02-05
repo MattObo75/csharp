@@ -49,24 +49,17 @@ using (StreamReader reader = new StreamReader(filePath))
     } 
 }
 
-Övning 1
-Beräkna GDP per capita (GDP / Population) för varje land och:
-- Spara endast de länder där GDP per capita är över ett visst värde.
-- Sortera resultatet i fallande ordning.
-- Visa de 5 rikaste länderna per invånare.
+Övning 2
+Analysera valutor i filen och ta reda på:
+- Hur många länder använder varje valuta.
+- Vilken valuta som används av flest länder.
+- Lista alla länder som använder den valutan.
 Krav
-- Använd samma textfil.
-- Läs in data som i din kod.
 Använd:
-- Split
-- TryParse
-- LINQ
-- minst en foreach
+- GroupBy
+- Count
+- Where
+- Minst en lösning med foreach
+- Skriv ut resultatet på ett tydligt sätt i konsolen
 - Hantera felaktiga data utan att programmet kraschar.
-
-Tips:
-GDP och Population är strängar: måste konverteras till double / long
-GDP per capita = GDP / Population
-Använd:
-- OrderByDescending(...)
-- Take(5)
+- Kommentera koden
