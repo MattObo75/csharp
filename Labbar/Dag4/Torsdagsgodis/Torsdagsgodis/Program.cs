@@ -163,7 +163,7 @@ Använd:
 
 try
 {
-    string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";
+    string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";  // Sökväg till textfilen
 
     // Lista som lagrar land och valuta
     List<(string Country, string Currency)> countries = new();
@@ -176,93 +176,91 @@ try
 
         string line;
 
-        while ((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) != null)  // Läs varje rad tills slutet av filen
         {
             // Hoppa över tomma rader
             if (string.IsNullOrWhiteSpace(line))
                 continue;
 
-            string[] parts = line.Split(';');
+            string[] parts = line.Split(';');   // Dela upp raden i delar baserat på semikolon
 
-            // Kontrollera korrekt format
+            // Kontrollera korrekt format, dvs fyra "delar" separerade med ; på raden, annars hoppa till nästa rad
             if (parts.Length != 4)
                 continue;
 
-            string country = parts[0].Trim();
-            string currency = parts[3].Trim();
+            string country = parts[0].Trim();   // Trimma bort eventuella blanksteg på land
+            string currency = parts[3].Trim();  // Trimma bort eventuella blanksteg på valuta   
 
             // Kontrollera att data inte är tom
-            if (!string.IsNullOrWhiteSpace(country) &&
-                !string.IsNullOrWhiteSpace(currency))
+            if (!string.IsNullOrWhiteSpace(country) && !string.IsNullOrWhiteSpace(currency))
             {
-                countries.Add((country, currency));
+                countries.Add((country, currency)); // Lägg till land och valuta i listan
             }
         }
     }
 
     // Gruppera länder efter valuta
     var currencyGroups = countries
-        .GroupBy(c => c.Currency)
-        .Select(group => new
+        .GroupBy(c => c.Currency)       // gruppera efter valuta
+        .Select(group => new            // skapa ett anonymt objekt för varje grupp
         {
-            Currency = group.Key,
-            Count = group.Count(),
-            Countries = group.Select(c => c.Country).ToList()       // var topRichCountries = richCountries.OrderByDescending(c => c.GDPPerCapita);
+            Currency = group.Key,       // valutanamn
+            Count = group.Count(),      // antal länder som använder valutan
+            Countries = group.Select(c => c.Country).ToList()       // lista med länder som använder valutan
         })
-        .OrderByDescending(group => group.Count) // sortering i fallande ordning
-        .ToList();
+        .OrderByDescending(group => group.Count) // sortera i fallande ordning
+        .ToList();  // konvertera till lista
 
     // Skriv ut antal länder per valuta
     Console.WriteLine("Antal länder per valuta:");
     Console.WriteLine("------------------------");
 
-    foreach (var group in currencyGroups) // foreach-lösning
+    foreach (var group in currencyGroups) // stega igenom varje valuta grupp
     {
-        if (group.Count > 1) {
+        if (group.Count > 1) // om fler än ett land använder valutan
+        {  
             Console.WriteLine($"{group.Currency}: {group.Count} länder");
         }
-        else
+        else // endast ett land använder valutan
         {
             Console.WriteLine($"{group.Currency}: {group.Count} land");
         }
 
     }
+    
+    int maxCount = currencyGroups.Max(g => g.Count); // hitta högsta antalet länder som använder en valuta
 
-    // Ta reda på vilken valuta som används av flest länder
-    int maxCount = currencyGroups.Max(g => g.Count);
-
-    var mostUsedCurrencies = currencyGroups
-        .Where(g => g.Count == maxCount)
-        .ToList();
+    var mostUsedCurrencies = currencyGroups // hitta valutor med högsta antalet länder
+        .Where(g => g.Count == maxCount)    // filtrera grupper med maxCount
+        .ToList();  // konvertera till lista
 
     Console.WriteLine();
     Console.WriteLine("Valuta som används av flest länder:");
     Console.WriteLine("----------------------------------");
 
-    foreach (var currency in mostUsedCurrencies)
+    foreach (var currency in mostUsedCurrencies)  // stega igenom valutor med flest länder
     {
-        Console.WriteLine($"{currency.Currency}: ({currency.Count} länder)");
+        Console.WriteLine($"{currency.Currency}: ({currency.Count} länder)");   // skriv ut valutanamn och antal länder
         Console.WriteLine("Länder:");
 
-        foreach (string country in currency.Countries)
+        foreach (string country in currency.Countries)  // stega igenom länder som använder valutan
         {
-            Console.WriteLine($"- {country}");
+            Console.WriteLine($"- {country}");  // skriv ut landets namn
         }
 
         Console.WriteLine();
     }
 }
-catch (FileNotFoundException)
+catch (FileNotFoundException)   // Hantera fel om filen inte hittas
 {
     Console.WriteLine("Fel: Filen hittades inte.");
 }
-catch (UnauthorizedAccessException)
+catch (UnauthorizedAccessException) // Hantera fel vid åtkomst nekad
 {
     Console.WriteLine("Fel: Åtkomst till filen nekades.");
 }
-catch (Exception ex)
+catch (Exception ex)    // Hantera alla andra oväntade fel
 {
     Console.WriteLine("Ett oväntat fel inträffade:");
     Console.WriteLine(ex.Message);
 }
-
