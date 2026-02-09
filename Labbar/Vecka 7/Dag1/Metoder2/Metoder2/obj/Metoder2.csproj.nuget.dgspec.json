@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Metoder2\\Metoder2.csproj": {}
+    "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Metoder2\\Metoder2.csproj": {}
   },
   "projects": {
-    "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Metoder2\\Metoder2.csproj": {
+    "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Metoder2\\Metoder2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Metoder2\\Metoder2.csproj",
+        "projectUniqueName": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Metoder2\\Metoder2.csproj",
         "projectName": "Metoder2",
-        "projectPath": "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Metoder2\\Metoder2.csproj",
+        "projectPath": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Metoder2\\Metoder2.csproj",
         "packagesPath": "C:\\Users\\LocalAdmin\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Metoder2\\obj\\",
+        "outputPath": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Metoder2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

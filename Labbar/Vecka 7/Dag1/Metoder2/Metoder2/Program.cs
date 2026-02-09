@@ -23,8 +23,8 @@
         static void Main(string[] args)
         {
             // Sökväg till filen som används av båda övningarna
-            string filePath = "C:\\git\\source\\C#\\Vecka 7\\Dag 1\\Metoder2\\Countries_area.txt";
-
+            string filePath = "X:\\source\\c#\\Labbar\\Vecka 7\\Dag1\\Metoder2\\Countries_area.txt";
+            
             // Hämtar kolumnnamn en gång och återanvänder dem
             string[] columnNames = GetColumnNames(filePath);
 

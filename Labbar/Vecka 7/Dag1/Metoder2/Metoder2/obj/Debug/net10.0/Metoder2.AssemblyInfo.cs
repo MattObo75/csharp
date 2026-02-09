@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Metoder2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0153be94ea84801ceeae697a84375bbc9470c487")]
 [assembly: System.Reflection.AssemblyProductAttribute("Metoder2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Metoder2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
