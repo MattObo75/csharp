@@ -1,0 +1,97 @@
+Make detailed comments on this C# code:
+
+try
+{
+    string filePath = @"X:\source\c#\Labbar\Dag4\Countries.txt";  
+
+    List<(string Country, string Currency)> countries = new();
+
+    using (StreamReader reader = new StreamReader(filePath))
+    {
+        reader.ReadLine();
+
+        string line;
+
+        while ((line = reader.ReadLine()) != null)  
+        {
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            string[] parts = line.Split(';');   
+
+            if (parts.Length != 4)
+                continue;
+
+            string country = parts[0].Trim();   
+            string currency = parts[3].Trim();    
+
+            if (!string.IsNullOrWhiteSpace(country) && !string.IsNullOrWhiteSpace(currency))
+            {
+                countries.Add((country, currency)); 
+            }
+        }
+    }
+
+    var currencyGroups = countries
+        .GroupBy(c => c.Currency)       
+        .Select(group => new            
+        {
+            Currency = group.Key,       
+            Count = group.Count(),      
+            Countries = group.Select(c => c.Country).ToList()       
+        })
+        .OrderByDescending(group => group.Count) 
+        .ToList();  
+
+    Console.WriteLine("Antal länder per valuta:");
+    Console.WriteLine("------------------------");
+
+    foreach (var group in currencyGroups) 
+    {
+        if (group.Count > 1) 
+        {  
+            Console.WriteLine($"{group.Currency}: {group.Count} länder");
+        }
+        else 
+        {
+            Console.WriteLine($"{group.Currency}: {group.Count} land");
+        }
+
+    }
+    
+    int maxCount = currencyGroups.Max(g => g.Count); 
+
+    var mostUsedCurrencies = currencyGroups 
+        .Where(g => g.Count == maxCount)    
+        .ToList();  
+
+    Console.WriteLine();
+    Console.WriteLine("Valuta som används av flest länder:");
+    Console.WriteLine("----------------------------------");
+
+    foreach (var currency in mostUsedCurrencies)  
+    {
+        Console.WriteLine($"{currency.Currency}: ({currency.Count} länder)");   
+        Console.WriteLine("Länder:");
+
+        foreach (string country in currency.Countries)  
+        {
+            Console.WriteLine($"- {country}");  
+        }
+
+        Console.WriteLine();
+    }
+}
+catch (FileNotFoundException)   
+{
+    Console.WriteLine("Fel: Filen hittades inte.");
+}
+catch (UnauthorizedAccessException) 
+{
+    Console.WriteLine("Fel: Åtkomst till filen nekades.");
+}
+catch (Exception ex)    
+{
+    Console.WriteLine("Ett oväntat fel inträffade:");
+    Console.WriteLine(ex.Message);
+}

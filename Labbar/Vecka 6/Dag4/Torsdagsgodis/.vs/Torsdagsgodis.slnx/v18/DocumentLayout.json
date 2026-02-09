@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\source\\c#\\Labbar\\Dag4\\Torsdagsgodis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64EDDAB8-302B-190D-A295-3E42DAE3BBF2}|Torsdagsgodis\\Torsdagsgodis.csproj|c:\\git\\source\\c#\\labbar\\dag4\\torsdagsgodis\\torsdagsgodis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64EDDAB8-302B-190D-A295-3E42DAE3BBF2}|Torsdagsgodis\\Torsdagsgodis.csproj|solutionrelative:torsdagsgodis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Dag4\\Torsdagsgodis\\Torsdagsgodis\\Program.cs",
+              "RelativeDocumentMoniker": "Torsdagsgodis\\Program.cs",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Dag4\\Torsdagsgodis\\Torsdagsgodis\\Program.cs",
+              "RelativeToolTip": "Torsdagsgodis\\Program.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAAAACkBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T08:06:31.569Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
