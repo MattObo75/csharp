@@ -1,0 +1,14 @@
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\bin\Debug\net10.0\Metoder2.exe
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\bin\Debug\net10.0\Metoder2.deps.json
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\bin\Debug\net10.0\Metoder2.runtimeconfig.json
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\bin\Debug\net10.0\Metoder2.dll
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\bin\Debug\net10.0\Metoder2.pdb
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.AssemblyInfoInputs.cache
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.AssemblyInfo.cs
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.csproj.CoreCompileInputs.cache
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.dll
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\refint\Metoder2.dll
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.pdb
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\Metoder2.genruntimeconfig.cache
+C:\git\source\C#\Vecka 7\Dag 1\Metoder2\Metoder2\obj\Debug\net10.0\ref\Metoder2.dll
