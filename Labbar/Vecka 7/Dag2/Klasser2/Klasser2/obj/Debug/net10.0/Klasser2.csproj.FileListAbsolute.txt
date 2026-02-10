@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\bin\Debug\net10.0\Klasser2.exe
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\bin\Debug\net10.0\Klasser2.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\bin\Debug\net10.0\Klasser2.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\bin\Debug\net10.0\Klasser2.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\bin\Debug\net10.0\Klasser2.pdb
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\refint\Klasser2.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.pdb
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\Klasser2.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser2\Klasser2\obj\Debug\net10.0\ref\Klasser2.dll

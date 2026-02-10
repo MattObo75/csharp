@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag2\\Klasser2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4096B712-9F24-4EF2-A5DF-B79A44CC36FA}|Klasser2\\Klasser2.csproj|x:\\source\\c#\\labbar\\vecka 7\\dag2\\klasser2\\klasser2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4096B712-9F24-4EF2-A5DF-B79A44CC36FA}|Klasser2\\Klasser2.csproj|solutionrelative:klasser2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE8F45B5-3EE8-2142-A7FF-3711C5F6ECDA}|Klasser2\\Klasser2.csproj|x:\\source\\c#\\labbar\\vecka 7\\dag2\\klasser2\\klasser2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE8F45B5-3EE8-2142-A7FF-3711C5F6ECDA}|Klasser2\\Klasser2.csproj|solutionrelative:klasser2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,9 +22,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag2\\Klasser2\\Klasser2\\Program.cs",
               "RelativeDocumentMoniker": "Klasser2\\Program.cs",
-              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag2\\Klasser2\\Klasser2\\Program.cs",
-              "RelativeToolTip": "Klasser2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag2\\Klasser2\\Klasser2\\Program.cs*",
+              "RelativeToolTip": "Klasser2\\Program.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T10:56:38.693Z",
               "EditorCaption": ""
