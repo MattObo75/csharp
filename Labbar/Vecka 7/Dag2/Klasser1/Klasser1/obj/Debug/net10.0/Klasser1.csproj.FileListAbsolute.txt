@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\bin\Debug\net10.0\Klasser1.exe
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\bin\Debug\net10.0\Klasser1.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\bin\Debug\net10.0\Klasser1.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\bin\Debug\net10.0\Klasser1.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\bin\Debug\net10.0\Klasser1.pdb
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\refint\Klasser1.dll
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.pdb
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\Klasser1.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag2\Klasser1\Klasser1\obj\Debug\net10.0\ref\Klasser1.dll
