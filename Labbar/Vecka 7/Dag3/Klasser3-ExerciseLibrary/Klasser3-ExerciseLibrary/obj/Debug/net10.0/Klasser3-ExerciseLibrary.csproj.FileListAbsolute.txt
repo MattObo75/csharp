@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\bin\Debug\net10.0\Klasser3-ExerciseLibrary.exe
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\bin\Debug\net10.0\Klasser3-ExerciseLibrary.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\bin\Debug\net10.0\Klasser3-ExerciseLibrary.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\bin\Debug\net10.0\Klasser3-ExerciseLibrary.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\bin\Debug\net10.0\Klasser3-ExerciseLibrary.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\refint\Klasser3-ExerciseLibrary.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\Klasser3-ExerciseLibrary.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseLibrary\Klasser3-ExerciseLibrary\obj\Debug\net10.0\ref\Klasser3-ExerciseLibrary.dll

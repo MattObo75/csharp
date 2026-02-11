@@ -1,0 +1,32 @@
+Ändra C# koden enligt följande:
+- Böcker hanteras av nya klassen Library
+
+Metoder:
+- AddBook(Book book): lägg till bok i Library
+- RemoveBook(Book book): ta bort bok från Library
+- ShowBooks(): visar böcker i Library
+- FindBook(string title): returnerar Book
+- BorrowBook(Book book, Library library): låna bok 
+- ReturnBook(Book book, Library library): återlämna bok
+- Rest(): ökar Energy för Reader med 40
+
+Logik:
+- Man får inte läsa om Energy är 0 (som i nuvarande kod)
+- Man kan bara läsa böcker man har lånat (lånad bok kopplad till läsare)
+- Man kan inte låna en bok som inte finns i biblioteket
+- Lägg till två exempelböcker och två exempelläsare från start
+
+Ändra så att menyvalen blir:
+1. Lägg till bok (AddBook)
+2. Ta bort bok (RemoveBook)
+3. Visa böcker (ShowBooks)
+4. Hitta bok (FindBook)
+5. Låna bok (BorrowBook)
+6. Återlämna bok (ReturnBook)
+7. Lägg till läsare (AddReader)
+8. Statistik (ShowStatistics)
+9. Visa alla läsare (ShowReaders)
+10. Simulera bokläsning (SimulateReading)
+11. Vila (Rest)
+12. Avsluta
+

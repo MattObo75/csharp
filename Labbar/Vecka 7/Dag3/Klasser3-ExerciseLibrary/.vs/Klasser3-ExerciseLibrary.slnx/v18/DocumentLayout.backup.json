@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag3\\Klasser3-ExerciseLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93914256-C50C-437F-BEFB-2C40DA705C8B}|Klasser3-ExerciseLibrary\\Klasser3-ExerciseLibrary.csproj|x:\\source\\c#\\labbar\\vecka 7\\dag3\\klasser3-exerciselibrary\\klasser3-exerciselibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93914256-C50C-437F-BEFB-2C40DA705C8B}|Klasser3-ExerciseLibrary\\Klasser3-ExerciseLibrary.csproj|solutionrelative:klasser3-exerciselibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag3\\Klasser3-ExerciseLibrary\\Klasser3-ExerciseLibrary\\Program.cs",
+              "RelativeDocumentMoniker": "Klasser3-ExerciseLibrary\\Program.cs",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag3\\Klasser3-ExerciseLibrary\\Klasser3-ExerciseLibrary\\Program.cs",
+              "RelativeToolTip": "Klasser3-ExerciseLibrary\\Program.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T12:48:17.637Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

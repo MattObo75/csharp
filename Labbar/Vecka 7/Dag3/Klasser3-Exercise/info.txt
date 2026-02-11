@@ -24,8 +24,12 @@ När en läsare läser en bok:
 4. Interaktion mellan klasser – Reader och Book + statisk serviceklass.
 5. LibraryService.LogRead() anropas för att öka total statistik.
 
-Quiz gällande C# och klasser
-Vad krävs för att en metod i en annan klass ska kunna anropas?
+Quiz gällande C# och klasser, vilket svar är rätt.
+Vad är korrekt om private set?
+A) Ingen kan läsa egenskapen 
+B) Ingen kan skriva till egenskapen 
+C) Andra klasser kan läsa men inte skriva 
+D) Endast static metoder kan skriva
 
 
 I Main klassen():
