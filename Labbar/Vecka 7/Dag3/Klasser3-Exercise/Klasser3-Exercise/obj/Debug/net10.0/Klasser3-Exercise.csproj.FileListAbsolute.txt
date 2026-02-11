@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\bin\Debug\net10.0\Klasser3-Exercise.exe
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\bin\Debug\net10.0\Klasser3-Exercise.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\bin\Debug\net10.0\Klasser3-Exercise.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\bin\Debug\net10.0\Klasser3-Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\bin\Debug\net10.0\Klasser3-Exercise.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\refint\Klasser3-Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\Klasser3-Exercise.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-Exercise\Klasser3-Exercise\obj\Debug\net10.0\ref\Klasser3-Exercise.dll

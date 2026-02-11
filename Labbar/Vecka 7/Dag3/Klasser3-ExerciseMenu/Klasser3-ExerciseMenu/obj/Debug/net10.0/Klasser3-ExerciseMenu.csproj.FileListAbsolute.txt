@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\bin\Debug\net10.0\Klasser3-ExerciseMenu.exe
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\bin\Debug\net10.0\Klasser3-ExerciseMenu.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\bin\Debug\net10.0\Klasser3-ExerciseMenu.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\bin\Debug\net10.0\Klasser3-ExerciseMenu.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\bin\Debug\net10.0\Klasser3-ExerciseMenu.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\refint\Klasser3-ExerciseMenu.dll
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.pdb
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\Klasser3-ExerciseMenu.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag3\Klasser3-ExerciseMenu\Klasser3-ExerciseMenu\obj\Debug\net10.0\ref\Klasser3-ExerciseMenu.dll

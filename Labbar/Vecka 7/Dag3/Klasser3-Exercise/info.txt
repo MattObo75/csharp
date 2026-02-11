@@ -1,0 +1,61 @@
+Övning "Magiskt bibliotek"
+Scenario: Du är bibliotekarie i ett magiskt bibliotek. Det finns olika Böcker (klassen Book) som kan läsas av Läsare (Reader). Varje läsare har Energy som minskar när de läser. Det finns en statisk klass (LibraryService) som håller koll på totalt antal lästa böcker.
+
+Steg 1: Skapa klasser
+1. Reader (person som läser böcker)
+Har egenskaper: Name, Energy
+
+Instansmetoder:
+- ReadBook(Book book): minskar Energy beroende på antal sidor delat med 2 (Pages / 2) och returnerar hur mycket energi som användes för att läsa boken.
+
+2. Book
+Egenskaper: Title, Pages
+
+3. LibraryService (statisk)
+Statisk metod: 
+LogRead(): ökar totalt antal lästa böcker.
+ - Statisk variabel: TotalBooksRead
+
+Steg 2: Interaktion
+När en läsare läser en bok:
+1. Reader anropar ReadBook(book): Energy minskar.
+2. Metoden returnerar hur mycket energi som användes.
+3. Instansdata: Varje Reader har sin egen Energy.
+4. Interaktion mellan klasser – Reader och Book + statisk serviceklass.
+5. LibraryService.LogRead() anropas för att öka total statistik.
+
+Quiz gällande C# och klasser
+Vad krävs för att en metod i en annan klass ska kunna anropas?
+
+
+I Main klassen():
+
+Book b1 = new Book { Title = "Magic 101", Pages = 100 };
+Book b2 = new Book { Title = "Potion Secrets", Pages = 50 };
+Reader r1 = new Reader { Name = "Alice", Energy = 100 };
+Reader r2 = new Reader { Name = "Bob", Energy = 80 };
+
+// Alice läser Magic 101
+int usedEnergy = r1.ReadBook(b1);
+LibraryService.LogRead();
+Console.WriteLine($"{r1.Name} använde {usedEnergy} energi. Energy kvar: {r1.Energy}");
+
+// Bob läser Potion Secrets
+usedEnergy = r2.ReadBook(b2);
+LibraryService.LogRead();
+Console.WriteLine($"{r2.Name} använde {usedEnergy} energi. Energy kvar: {r2.Energy}");
+
+// Visa totala antal lästa böcker
+Console.WriteLine($"Totalt lästa böcker: {LibraryService.TotalBooksRead}");
+
+Utveckla koden så att användaren får följande menyval med undermenyer:
+1. Lägg till läsare
+- Ange namn och energi från start
+2. Lägg till bok
+- Ange titel och antal sidor
+3. Simulera bokläsning
+- Simulera att en slumpmässig läsare läser en slumpmässig bok. Sätt default-värden ifall inget angetts av användaren.
+4. Statistik
+- Visa totalt antal lästa böcker
+5. Avsluta
+
