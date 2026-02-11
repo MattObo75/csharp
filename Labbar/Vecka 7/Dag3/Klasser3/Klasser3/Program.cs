@@ -2,9 +2,96 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)       
         {
-            Console.WriteLine("Hello, World!");
+            Player p1 = new Player ("Alice");
+            Player p2 = new Player("Bob");
+            p2.SayHello(); // Output: Hej! Jag heter Bob
+
+            Dice dice = new Dice();
+            int steps = dice.Roll();
+
+            p1.Move(steps); // Alice går X steg
+
+            steps = dice.Roll();
+            p2.Move(steps); // Bob går Y steg
+
+            ManaPool mp = new ManaPool(50);
+            mp.Use(10);     // Output: Använde 10 mana, kvar: 40
+
+            int health = 100;
+            CombatService.DealDamage(ref health, 25); // Output: Skada: 25, återstående hälsa: 75
+
+            Farmer f1 = new Farmer();
+            Farmer f2 = new Farmer();
+            f1.Work(); // Jobbar dag 1
+            WorldTime.Day++;
+            f2.Work(); // Jobbar dag 2
+        }
+
+        // Utanför Program-klassen, men inom samma namespace
+        class Player
+        {
+            public string Name { get; set; }
+            public int Position { get; private set; } = 0;
+            // Konstruktor
+            public Player(string name)
+            {
+                Name = name;
+            }
+            public void Move(int steps)
+            {
+                Position += steps;
+                Console.WriteLine($"{Name} går {steps} steg, nu på {Position}");
+            }
+            public void SayHello()
+            {
+                Console.WriteLine($"Hej! Jag heter {Name}");
+            }
+        }
+
+        class Dice 
+        {
+            public int Roll()
+            {
+                return Random.Shared.Next(1, 7); // 1 till 6
+            }
+        }
+
+        class ManaPool
+        {
+            public int Amount { get; private set; }
+            public ManaPool(int start)
+            {
+                Amount = start;
+            }
+            public void Use(int cost)
+            {
+                Amount -= cost;
+                Console.WriteLine($"Använde {cost} mana, kvar: {Amount}");
+            }
+        }
+
+        class CombatService
+        {
+            public static void DealDamage(ref int health, int dmg)
+            {
+                health -= dmg;
+                Console.WriteLine($"Skada: {dmg}, återstående hälsa: {health}");
+            }
+        }
+
+        class WorldTime
+        {
+            public static int Day = 1;
+        }
+
+        class Farmer
+        {
+            public void Work()
+            {
+                Console.WriteLine($"Jobbar dag {WorldTime.Day}");
+            }
         }
     }
 }

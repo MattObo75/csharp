@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Klasser3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6253a284efbff7594616e9461373deb38344a9b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c743d025a76c13238c5800f8a6442a5829a5a4a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Klasser3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Klasser3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
