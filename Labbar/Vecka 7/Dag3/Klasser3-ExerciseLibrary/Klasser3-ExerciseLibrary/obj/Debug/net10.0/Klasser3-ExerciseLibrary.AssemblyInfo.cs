@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Klasser3-ExerciseLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e227af68f833c96905d02971c8b9910005ee7d0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b23921dba6bae5bd9cce3a86d90d9b96ff41792")]
 [assembly: System.Reflection.AssemblyProductAttribute("Klasser3-ExerciseLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Klasser3-ExerciseLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

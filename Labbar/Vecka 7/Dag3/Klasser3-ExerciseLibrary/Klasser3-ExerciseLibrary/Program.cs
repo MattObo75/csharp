@@ -1,7 +1,12 @@
 ﻿namespace Klasser3_ExerciseLibrary
-{
+{    
+
+    // ========================================
+    // HUVUDPROGRAM
+    // ========================================
     internal class Program
     {
+        // Globalt bibliotek och lista över läsare
         static Library library = new Library();
         static List<Reader> readers = new List<Reader>();
 
@@ -15,10 +20,11 @@
             readers.Add(new Reader { Name = "Alice", Energy = 100 });
             readers.Add(new Reader { Name = "Bob", Energy = 80 });
 
-            bool running = true;
+            bool running = true; // Flagga för huvudloopen
 
             while (running)
             {
+                // Meny för användaren
                 Console.WriteLine("\n=== MAGISKT BIBLIOTEK ===");
                 Console.WriteLine("1. Lägg till bok");
                 Console.WriteLine("2. Ta bort bok");
@@ -36,6 +42,7 @@
 
                 string choice = Console.ReadLine();
 
+                // Anropar metod baserat på användarens val
                 switch (choice)
                 {
                     case "1": AddBook(); break;
@@ -55,18 +62,24 @@
             }
         }
 
+        // ========================================
+        // METODER FÖR BOKHANTERING
+        // ========================================
+
         static void AddBook()
         {
             Console.Write("Ange titel: ");
             string title = Console.ReadLine();
 
             Console.Write("Ange antal sidor: ");
+            // Försök konvertera input till int, annars använd 100 som default
             if (!int.TryParse(Console.ReadLine(), out int pages))
             {
                 pages = 100;
                 Console.WriteLine("Ogiltigt sidantal. Default 100 används.");
             }
 
+            // Skapa och lägg till boken i biblioteket
             library.AddBook(new Book { Title = title, Pages = pages });
             Console.WriteLine("Bok tillagd!");
         }
@@ -76,6 +89,7 @@
             Console.Write("Ange titel på boken som ska tas bort: ");
             string title = Console.ReadLine();
 
+            // Hitta boken i biblioteket
             Book book = library.FindBook(title);
             if (book == null)
             {
@@ -83,6 +97,7 @@
                 return;
             }
 
+            // Ta bort boken
             library.RemoveBook(book);
             Console.WriteLine($"Boken '{title}' har tagits bort.");
         }
@@ -99,9 +114,13 @@
                 Console.WriteLine("Boken hittades inte.");
         }
 
+        // ========================================
+        // METODER FÖR LÅNA/ÅTERLÄMNA BOK
+        // ========================================
+
         static void BorrowBook()
         {
-            Reader reader = SelectReader();
+            Reader reader = SelectReader(); // Välj en läsare
             if (reader == null) return;
 
             Console.Write("Ange titel på boken som ska lånas: ");
@@ -114,6 +133,7 @@
                 return;
             }
 
+            // Försök låna boken
             if (reader.BorrowBook(book, library))
                 Console.WriteLine($"{reader.Name} har lånat '{book.Title}'.");
             else
@@ -122,12 +142,13 @@
 
         static void ReturnBook()
         {
-            Reader reader = SelectReader();
+            Reader reader = SelectReader(); // Välj en läsare
             if (reader == null) return;
 
             Console.Write("Ange titel på boken som ska återlämnas: ");
             string title = Console.ReadLine();
 
+            // Kontrollera att läsaren verkligen lånat boken
             Book book = reader.BorrowedBooks.Find(b => b.Title == title);
             if (book == null)
             {
@@ -135,9 +156,14 @@
                 return;
             }
 
+            // Återlämna boken till biblioteket
             reader.ReturnBook(book, library);
             Console.WriteLine($"{reader.Name} har återlämnat '{book.Title}'.");
         }
+
+        // ========================================
+        // METODER FÖR LÄSARE
+        // ========================================
 
         static void AddReader()
         {
@@ -151,13 +177,14 @@
                 Console.WriteLine("Ogiltig energi. Default 100 används.");
             }
 
+            // Skapa och lägg till läsaren i listan
             readers.Add(new Reader { Name = name, Energy = energy });
             Console.WriteLine("Läsare tillagd!");
         }
 
         static void SimulateReading()
         {
-            Reader reader = SelectReader();
+            Reader reader = SelectReader(); // Välj en läsare
             if (reader == null) return;
 
             if (reader.BorrowedBooks.Count == 0)
@@ -171,9 +198,10 @@
 
             Console.WriteLine($"\n{reader.Name} försöker läsa '{book.Title}'...");
 
+            // Försök läsa boken, minskar energi
             if (reader.ReadBook(book))
             {
-                LibraryService.LogRead();
+                LibraryService.LogRead(); // Logga läsningen
                 Console.WriteLine($"Läsning lyckades! Energi kvar: {reader.Energy}");
             }
             else
@@ -184,13 +212,14 @@
 
         static void Rest()
         {
-            Reader reader = SelectReader();
+            Reader reader = SelectReader(); // Välj en läsare
             if (reader == null) return;
 
-            reader.Rest();
+            reader.Rest(); // Öka energi
             Console.WriteLine($"{reader.Name} har vilat och fått +40 energi. Nuvarande energi: {reader.Energy}");
         }
 
+        // Hjälpmetod för att välja en läsare
         static Reader SelectReader()
         {
             if (readers.Count == 0)
@@ -229,6 +258,7 @@
                 return;
             }
 
+            // Visa varje läsare med status och antal lånade böcker
             foreach (var reader in readers)
             {
                 string status = reader.IsExhausted ? "UTMATTAD" : "Aktiv";
@@ -237,14 +267,18 @@
         }
     }
 
+    // ========================================
+    // KLASS FÖR LÄSARE
+    // ========================================
     class Reader
     {
-        public string Name { get; set; }
-        public int Energy { get; set; }
-        public List<Book> BorrowedBooks { get; set; } = new List<Book>();
+        public string Name { get; set; } // Läsares namn
+        public int Energy { get; set; }   // Läsares nuvarande energi
+        public List<Book> BorrowedBooks { get; set; } = new List<Book>(); // Lånade böcker
 
-        public bool IsExhausted => Energy <= 0;
+        public bool IsExhausted => Energy <= 0; // Är läsaren utmattad?
 
+        // Låna en bok från biblioteket
         public bool BorrowBook(Book book, Library library)
         {
             if (!library.Books.Contains(book)) return false;
@@ -254,12 +288,14 @@
             return true;
         }
 
+        // Återlämna en bok till biblioteket
         public void ReturnBook(Book book, Library library)
         {
             BorrowedBooks.Remove(book);
             library.AddBook(book);
         }
 
+        // Läs en bok och minska energi
         public bool ReadBook(Book book)
         {
             if (IsExhausted)
@@ -268,7 +304,7 @@
                 return false;
             }
 
-            int energyNeeded = book.Pages / 2;
+            int energyNeeded = book.Pages / 2; // Energiförbrukning baserat på sidantal
             if (Energy < energyNeeded) return false;
 
             Energy -= energyNeeded;
@@ -278,18 +314,25 @@
             return true;
         }
 
+        // Vila för att återställa energi
         public void Rest()
         {
             Energy += 40;
         }
     }
 
+    // ========================================
+    // KLASS FÖR BÖCKER
+    // ========================================
     class Book
     {
-        public string Title { get; set; }
-        public int Pages { get; set; }
+        public string Title { get; set; } // Boktitel
+        public int Pages { get; set; }    // Antal sidor
     }
 
+    // ========================================
+    // KLASS FÖR BIBLIOTEK
+    // ========================================
     class Library
     {
         public List<Book> Books { get; set; } = new List<Book>();
@@ -325,14 +368,17 @@
         }
     }
 
+    // ========================================
+    // STATISTIK OCH SERVICE FÖR BIBLIOTEKET
+    // ========================================
     static class LibraryService
     {
-        public static int TotalBooksRead = 0;
+        public static int TotalBooksRead = 0; // Totalt antal lästa böcker
 
+        // Logga varje gång en bok läses
         public static void LogRead()
         {
             TotalBooksRead++;
         }
     }
-
 }
