@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\bin\Debug\net10.0\ArvPolyTutorial.exe
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\bin\Debug\net10.0\ArvPolyTutorial.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\bin\Debug\net10.0\ArvPolyTutorial.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\bin\Debug\net10.0\ArvPolyTutorial.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\bin\Debug\net10.0\ArvPolyTutorial.pdb
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\refint\ArvPolyTutorial.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.pdb
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ArvPolyTutorial.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPolyTutorial\ArvPolyTutorial\obj\Debug\net10.0\ref\ArvPolyTutorial.dll

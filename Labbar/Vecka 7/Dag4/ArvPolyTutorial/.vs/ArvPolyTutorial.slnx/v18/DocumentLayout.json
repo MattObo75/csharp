@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag4\\ArvPolyTutorial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7E4E62-7493-4EF7-88EA-6C46E684EF94}|ArvPolyTutorial\\ArvPolyTutorial.csproj|x:\\source\\c#\\labbar\\vecka 7\\dag4\\arvpolytutorial\\arvpolytutorial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7E4E62-7493-4EF7-88EA-6C46E684EF94}|ArvPolyTutorial\\ArvPolyTutorial.csproj|solutionrelative:arvpolytutorial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag4\\ArvPolyTutorial\\ArvPolyTutorial\\Program.cs",
+              "RelativeDocumentMoniker": "ArvPolyTutorial\\Program.cs",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 7\\Dag4\\ArvPolyTutorial\\ArvPolyTutorial\\Program.cs",
+              "RelativeToolTip": "ArvPolyTutorial\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwGMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T10:22:27.99Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

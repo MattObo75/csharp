@@ -199,9 +199,8 @@
             Console.WriteLine($"\n{reader.Name} försöker läsa '{book.Title}'...");
 
             // Försök läsa boken, minskar energi
-            if (reader.ReadBook(book))
+            if (reader.ReadBook(book))            
             {
-                LibraryService.LogRead(); // Logga läsningen
                 Console.WriteLine($"Läsning lyckades! Energi kvar: {reader.Energy}");
             }
             else
@@ -245,7 +244,9 @@
 
         static void ShowStatistics()
         {
+            Console.WriteLine($"\nStatistik för {library.Name}");
             Console.WriteLine($"\nTotalt antal lästa böcker: {LibraryService.TotalBooksRead}");
+            Console.WriteLine($"\nTotalt använd energi: {LibraryService.TotalEnergyUsed}");
         }
 
         static void ShowReaders()
@@ -305,6 +306,9 @@
             }
 
             int energyNeeded = book.Pages / 2; // Energiförbrukning baserat på sidantal
+
+            LibraryService.LogRead(energyNeeded); // Logga läsningen
+
             if (Energy < energyNeeded) return false;
 
             Energy -= energyNeeded;
@@ -335,6 +339,7 @@
     // ========================================
     class Library
     {
+        public string Name { get; set; } = "Magiskt Bibliotek"; // Biblioteksnamn
         public List<Book> Books { get; set; } = new List<Book>();
 
         public void AddBook(Book book)
@@ -374,11 +379,13 @@
     static class LibraryService
     {
         public static int TotalBooksRead = 0; // Totalt antal lästa böcker
+        public static int TotalEnergyUsed = 0; // Totalt använd energi
 
         // Logga varje gång en bok läses
-        public static void LogRead()
+        public static void LogRead(int energyUsed)
         {
             TotalBooksRead++;
+            TotalEnergyUsed += energyUsed;
         }
     }
 }

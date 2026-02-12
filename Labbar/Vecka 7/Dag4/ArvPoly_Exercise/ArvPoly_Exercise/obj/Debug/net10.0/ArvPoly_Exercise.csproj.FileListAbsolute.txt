@@ -1,0 +1,15 @@
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\bin\Debug\net10.0\ArvPoly_Exercise.exe
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\bin\Debug\net10.0\ArvPoly_Exercise.deps.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\bin\Debug\net10.0\ArvPoly_Exercise.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\bin\Debug\net10.0\ArvPoly_Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\bin\Debug\net10.0\ArvPoly_Exercise.pdb
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.GeneratedMSBuildEditorConfig.editorconfig
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.AssemblyInfoInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.AssemblyInfo.cs
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.csproj.CoreCompileInputs.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.sourcelink.json
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\refint\ArvPoly_Exercise.dll
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.pdb
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ArvPoly_Exercise.genruntimeconfig.cache
+X:\source\c#\Labbar\Vecka 7\Dag4\ArvPoly_Exercise\ArvPoly_Exercise\obj\Debug\net10.0\ref\ArvPoly_Exercise.dll
