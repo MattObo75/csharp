@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArvPoly_Exercise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c545243e7aade4fdc455956d0851160e80d40049")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+642fa154cbce2712160d37cce7bd23e97236b627")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArvPoly_Exercise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArvPoly_Exercise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
