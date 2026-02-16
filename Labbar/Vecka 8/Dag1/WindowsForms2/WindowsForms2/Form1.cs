@@ -13,7 +13,7 @@ namespace WindowsForms2
         private void cmdBeslut_Click(object sender, EventArgs e)
         {
             string input = txtVal.Text;
-            //oavsett om du svarat "Ja" eller "ja" så ändas svaret till ja
+            //oavsett om du svarat "Ja" eller "ja" så ändras svaret till ja
             switch (input.ToLower())
             {
                 case "ja":
@@ -79,8 +79,8 @@ namespace WindowsForms2
             if (!string.IsNullOrEmpty(txtVal.Text))
             {
                 switch (selectedDessert)
-                { 
-                    case "Äppelpaj":                        
+                {
+                    case "Äppelpaj":
                         lblVal.ForeColor = Color.Green;
                         lblVal.Text = selectedDessert;
                         break;
@@ -89,7 +89,19 @@ namespace WindowsForms2
                         lblVal.Text = selectedDessert;
                         break;
                     case "Frukt":
-                        lblVal.ForeColor = Color.Pink;
+                        lblVal.ForeColor = Color.DeepPink;
+                        lblVal.Text = selectedDessert;
+                        break;
+                    case "Daimpannacotta":
+                        lblVal.ForeColor = Color.Brown;
+                        lblVal.Text = selectedDessert;
+                        break;
+                    case "Mangomousse":
+                        lblVal.ForeColor = Color.Red;
+                        lblVal.Text = selectedDessert;
+                        break;
+                    case "Crème brûlée":
+                        lblVal.ForeColor = Color.LightGoldenrodYellow;
                         lblVal.Text = selectedDessert;
                         break;
                 }
@@ -98,6 +110,54 @@ namespace WindowsForms2
             {
                 lblVal.Text = "Ingen dessert vald";
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        public class Utilities
+        {
+            public static void ResetAllControls(Control form)
+            {
+                foreach (Control control in form.Controls)
+                {
+                    if (control is TextBox)
+                    {
+                        TextBox textBox = (TextBox)control;
+                        textBox.Text = null;
+                    }                   
+
+                    if (control is ComboBox)
+                    {
+                        ComboBox comboBox = (ComboBox)control;
+                        if (comboBox.Items.Count > 0)
+                            comboBox.SelectedIndex = 0;
+                    }
+
+                    if (control is CheckBox)
+                    {
+                        CheckBox checkBox = (CheckBox)control;
+                        checkBox.Checked = false;
+                    }
+
+                    if (control is ListBox)
+                    {
+                        ListBox listBox = (ListBox)control;
+                        listBox.ClearSelected();
+                    }
+                }
+                
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Utilities.ResetAllControls(this);
+            string lblMessage = "Gillar du C# ? Svara Ja, Nej eller Kanske";
+            lblVal.Text = lblMessage;
+            lblVal.ForeColor = Color.Black;
         }
     }
 }

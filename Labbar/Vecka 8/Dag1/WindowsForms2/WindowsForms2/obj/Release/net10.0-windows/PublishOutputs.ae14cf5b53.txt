@@ -1,0 +1,5 @@
+X:\source\c#\Labbar\Vecka 8\Dag1\WindowsForms2\WindowsForms2\bin\Release\net10.0-windows\publish\WindowsForms2.exe
+X:\source\c#\Labbar\Vecka 8\Dag1\WindowsForms2\WindowsForms2\bin\Release\net10.0-windows\publish\WindowsForms2.dll
+X:\source\c#\Labbar\Vecka 8\Dag1\WindowsForms2\WindowsForms2\bin\Release\net10.0-windows\publish\WindowsForms2.deps.json
+X:\source\c#\Labbar\Vecka 8\Dag1\WindowsForms2\WindowsForms2\bin\Release\net10.0-windows\publish\WindowsForms2.runtimeconfig.json
+X:\source\c#\Labbar\Vecka 8\Dag1\WindowsForms2\WindowsForms2\bin\Release\net10.0-windows\publish\WindowsForms2.pdb
