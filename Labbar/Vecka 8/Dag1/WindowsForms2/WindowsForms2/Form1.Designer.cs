@@ -32,16 +32,17 @@
             txtVal = new TextBox();
             cmdBeslut = new Button();
             cmbDesserts = new ComboBox();
+            cmdValtDessert = new Button();
             SuspendLayout();
             // 
             // lblVal
             // 
             lblVal.AutoSize = true;
-            lblVal.Location = new Point(93, 61);
+            lblVal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblVal.Location = new Point(93, 53);
             lblVal.Name = "lblVal";
-            lblVal.Size = new Size(38, 15);
+            lblVal.Size = new Size(0, 21);
             lblVal.TabIndex = 0;
-            lblVal.Text = "label1";
             // 
             // txtVal
             // 
@@ -69,11 +70,23 @@
             cmbDesserts.TabIndex = 3;
             cmbDesserts.SelectedIndexChanged += cmbDesserts_SelectedIndexChanged;
             // 
+            // cmdValtDessert
+            // 
+            cmdValtDessert.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmdValtDessert.Location = new Point(360, 148);
+            cmdValtDessert.Name = "cmdValtDessert";
+            cmdValtDessert.Size = new Size(160, 23);
+            cmdValtDessert.TabIndex = 4;
+            cmdValtDessert.Text = "Bekräfta dessert";
+            cmdValtDessert.UseVisualStyleBackColor = true;
+            cmdValtDessert.Click += cmdValtDessert_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cmdValtDessert);
             Controls.Add(cmbDesserts);
             Controls.Add(cmdBeslut);
             Controls.Add(txtVal);
@@ -90,5 +103,6 @@
         private TextBox txtVal;
         private Button cmdBeslut;
         private ComboBox cmbDesserts;
+        private Button cmdValtDessert;
     }
 }

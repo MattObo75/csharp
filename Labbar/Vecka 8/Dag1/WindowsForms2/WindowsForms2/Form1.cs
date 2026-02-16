@@ -8,7 +8,7 @@ namespace WindowsForms2
         {
             InitializeComponent();
             FillArrayWithValues();
-        }        
+        }
 
         private void cmdBeslut_Click(object sender, EventArgs e)
         {
@@ -70,6 +70,33 @@ namespace WindowsForms2
             {
                 txtVal.Text = string.Empty;
                 // tomt om inget är valt
+            }
+        }
+
+        private void cmdValtDessert_Click(object sender, EventArgs e)
+        {
+            string selectedDessert = txtVal.Text;
+            if (!string.IsNullOrEmpty(txtVal.Text))
+            {
+                switch (selectedDessert)
+                { 
+                    case "Äppelpaj":                        
+                        lblVal.ForeColor = Color.Green;
+                        lblVal.Text = selectedDessert;
+                        break;
+                    case "Chockladglass":
+                        lblVal.ForeColor = Color.Blue;
+                        lblVal.Text = selectedDessert;
+                        break;
+                    case "Frukt":
+                        lblVal.ForeColor = Color.Pink;
+                        lblVal.Text = selectedDessert;
+                        break;
+                }
+            }
+            else
+            {
+                lblVal.Text = "Ingen dessert vald";
             }
         }
     }
