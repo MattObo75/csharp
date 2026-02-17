@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\ExerciseWPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50CCAE9F-60EF-49F9-AE31-01BD2A3F9A03}|ExerciseWPF\\ExerciseWPF.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag2\\exercisewpf\\exercisewpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CCAE9F-60EF-49F9-AE31-01BD2A3F9A03}|ExerciseWPF\\ExerciseWPF.csproj|solutionrelative:exercisewpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CCAE9F-60EF-49F9-AE31-01BD2A3F9A03}|ExerciseWPF\\ExerciseWPF.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag2\\exercisewpf\\exercisewpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{50CCAE9F-60EF-49F9-AE31-01BD2A3F9A03}|ExerciseWPF\\ExerciseWPF.csproj|solutionrelative:exercisewpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\ExerciseWPF\\ExerciseWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ExerciseWPF\\MainWindow.xaml",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\ExerciseWPF\\ExerciseWPF\\MainWindow.xaml",
+              "RelativeToolTip": "ExerciseWPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-17T08:09:57.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\ExerciseWPF\\ExerciseWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ExerciseWPF\\MainWindow.xaml.cs",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\ExerciseWPF\\ExerciseWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ExerciseWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T08:09:57.435Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
