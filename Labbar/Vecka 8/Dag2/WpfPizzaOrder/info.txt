@@ -1,0 +1,254 @@
+Utvärdera denna C# WPF kod och kom med förbättringsförslag.
+
+MainWindow.xaml:
+<Window x:Class="WpfPizzaOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPizzaOrder"
+        mc:Ignorable="d"
+        Title="Pizzabeställning" Height="620" Width="550" Background="#FF7783E6">
+    <Grid Margin="20">
+        <!-- Rader -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- 0. Header -->
+            <RowDefinition Height="Auto"/>
+            <!-- 1. GroupBox -->
+            <RowDefinition Height="Auto"/>
+            <!-- 2. GroupBox med ComboBox -->
+            <RowDefinition Height="Auto"/>
+            <!-- 3. Textbox med knapp -->
+            <RowDefinition Height="Auto"/>
+            <!-- 4. Stor Textbox -->
+            <RowDefinition Height="Auto"/>
+            <!-- 5. Knappar för Återställ/Avsluta -->
+            <RowDefinition Height="*"/>
+            <!-- 6. Tom plats -->
+        </Grid.RowDefinitions>
+        <!-- Kolumner -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblHeader" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Pizzabeställning" HorizontalAlignment="Center" Margin="0,5,0,0" RenderTransformOrigin="0.211,-1.244" Width="141" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalAlignment="Top"/>
+        
+        <!-- ===== GROUPBOX MED RADIOBUTTONS ===== -->
+        <GroupBox Header="Välj storlek"
+	        Grid.Row="1"
+	        Grid.Column="0"
+	        Grid.ColumnSpan="2"
+	        Margin="0,0,0,10">
+
+            <StackPanel Margin="10">
+                <RadioButton x:Name="rbAlt1"
+			    Content="Small (65 kr)"
+			    Margin="5"/>
+                <RadioButton x:Name="rbAlt2"
+			    Content="Medium (85 kr)"
+			    Margin="5"/>
+                <RadioButton x:Name="rbAlt3"
+			    Content="Large (105 kr)"
+			    Margin="5"/>
+
+                <TextBox x:Name="txtHidden"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="80"
+                    Height="30"    
+                    Margin="0,0,10,0"
+                    IsReadOnly="True" HorizontalAlignment="Right" FontSize="12" BorderBrush="{x:Null}" Background="#FFCCDAE8" Visibility="Collapsed"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Välj pizza"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="0,0,0,10">
+
+            <!-- ===== COMBOBOX ===== -->
+            <ComboBox x:Name="cmbPizza"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 Width="256"
+                 Height="30"
+                 Margin="10,5,0,10" HorizontalAlignment="Left" SelectionChanged="cmbPizza_SelectionChanged">
+            </ComboBox>
+        </GroupBox>
+
+        <!-- ===== TEXTBOX FÖR UTSKRIFT ===== -->
+        <TextBox x:Name="txtShow"
+            Grid.Row="3"
+            Width="323"
+            Height="40"            
+            IsReadOnly="True" HorizontalAlignment="Left" FontSize="14" BorderBrush="{x:Null}" Background="{x:Null}" Grid.ColumnSpan="2"/>
+
+        <Button x:Name="cmdAddPizza"
+            Content="Lägg till"
+            Grid.Row="2"
+            Grid.Column="1"
+            Width="150"
+            Height="35"
+            Click="cmdAddPizza_Click"
+            Margin="0,5,5,10" HorizontalAlignment="Right"/>
+
+        <!-- ===== TEXTBOX FÖR UTSKRIFT ===== -->
+        <TextBox x:Name="txtResult"
+            Grid.Row="4"
+            Grid.Column="0"
+            Width="480"
+            Height="180"    
+            Margin="0,5,0,5"
+            IsReadOnly="True" HorizontalAlignment="Left" FontSize="14" BorderBrush="{x:Null}" Background="#FFCCDAE8" Grid.ColumnSpan="2"/>
+
+        <Button x:Name="cmdSendOrder"
+            Content="Skicka beställning"
+            Grid.Row="5"
+            Grid.Column="0"
+            Width="150"
+            Height="35"
+            Click="cmdSendOrder_Click"
+            Margin="0,5,0,10" HorizontalAlignment="Left"/>
+        
+        <!-- ===== KNAPP SOM RENSAR ===== -->
+        <Button x:Name="cmdClear"
+            Content="Rensa"
+            Grid.Row="5"
+            Grid.Column="1"            
+            Width="100"
+            Height="35"
+            Click="cmdClear_Click"
+            Margin="10,5,120,10" HorizontalAlignment="Right"/>
+
+        <!-- ===== KNAPP SOM AVSLUTAR ===== -->
+        <Button x:Name="cmdClose"
+            Content="Avsluta"
+            Grid.Row="5"
+            Grid.Column="1"
+            Width="100"
+            Height="35"
+            Click="cmdClose_Click"
+            Margin="10,5,5,10" HorizontalAlignment="Right"/>
+
+    </Grid>
+</Window>
+
+MainWindow.xaml.cs
+namespace WpfPizzaOrder
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public static double totalPrice = 0;
+        public MainWindow()
+        {
+            InitializeComponent();
+            FillComboBoxWithValues();
+        }        
+
+        public void FillComboBoxWithValues()
+        {
+            try
+            {
+                using StreamReader sr = new StreamReader(@"X:\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizzor.txt");
+                string line = sr.ReadLine();
+                string[] valuesText = new string[10]; //initialisera räknare i
+                int i = 0;
+                while (line != null)
+                {
+                    valuesText[i] = line;
+                    line = sr.ReadLine();
+                    ++i;
+                } //skriver ut arrayen:
+                string output = string.Empty;
+                foreach (var item in valuesText)
+                {
+                    if (item != null)
+                    {
+                        output += item + "\n";
+                        cmbPizza.Items.Add(item);
+                    }
+                }
+                //MessageBox.Show(output);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+        private void cmdAddPizza_Click(object sender, RoutedEventArgs e)
+        {
+            double pizzaPrice = double.Parse(txtHidden.Text);
+            totalPrice += pizzaPrice; 
+            txtResult.Text = "Du har lagt till " + cmbPizza.Text + " i din beställning!";
+            
+            txtResult.Text += "\nTotalsumma: " + totalPrice + " kr";
+        }
+
+        private void cmdSendOrder_Click(object sender, RoutedEventArgs e)
+        {
+            txtResult.Text += "\nDin beställning har skickats! \nTack för att du beställer från oss!";
+        }
+
+        public void cmbPizza_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string chosenPizza = null;
+            string chosenSize = null;
+            string pizzaPrice = null;
+            if (rbAlt1.IsChecked == true)
+            {
+                chosenSize = rbAlt1.Content.ToString();
+                pizzaPrice = "65";
+            }
+            else if (rbAlt2.IsChecked == true)
+            {
+                chosenSize = rbAlt2.Content.ToString();
+                pizzaPrice = "85";
+            }
+            else if (rbAlt3.IsChecked == true)
+            {
+                chosenSize = rbAlt3.Content.ToString();
+                pizzaPrice = "105";
+            }
+
+            if (cmbPizza.SelectedIndex > -1)
+            {
+                chosenPizza = cmbPizza.SelectedItem.ToString();
+            }
+            txtShow.Text = chosenPizza + ", storlek " + chosenSize;
+            txtHidden.Text = pizzaPrice;
+        }
+
+        private void cmdClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void cmdClear_Click(object sender, RoutedEventArgs e)
+        {
+            rbAlt1.IsChecked = false;
+            rbAlt2.IsChecked = false;
+            rbAlt3.IsChecked = false;
+            cmbPizza.SelectedIndex = -1;
+            txtShow.Text = "";
+            txtResult.Text = "";
+            txtHidden.Text = "";
+        }
+
+    }
+}
+
+<Style TargetType="Background">
+         <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.0" Color="#90DDDD" />
+                        <GradientStop Offset="1.0" Color="#5BFFFF" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+         </Setter.Value>
+</Style>

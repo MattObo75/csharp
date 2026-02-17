@@ -1,0 +1,10 @@
+1.Bussola
+2.Calzone
+3.Capricciosa
+4.Funghi
+5.Hawaii
+6.Kebabpizza
+7.Kycklingpizza
+8.Margherita
+9.Mexicana
+10.Vesuvio
