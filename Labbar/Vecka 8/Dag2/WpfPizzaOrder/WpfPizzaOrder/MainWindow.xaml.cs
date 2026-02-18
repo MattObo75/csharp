@@ -14,26 +14,26 @@ namespace WpfPizzaOrder
 {
     public partial class MainWindow : Window
     {
-        private const decimal VAT_RATE = 0.25m;
-        private decimal totalPrice = 0m;
-        private int pizzaCount = 0;
+        private const decimal VAT_RATE = 0.25m; // Momssats (25%)
+        private decimal totalPrice = 0m;        // Totalpris exklusive moms
+        private int pizzaCount = 0;             // Antal pizzor i beställningen
 
         public MainWindow()
         {
             InitializeComponent();
-            FillComboBoxWithValues();
-            UpdateSummary();
+            FillComboBoxWithValues();           // Läser pizzor från fil
+            UpdateSummary();                    // Visar startvärden
         }
 
         // =========================
-        // Läs pizzor från fil
+        // Läs pizzor från fil och fyller ComboBox
         // =========================
         public void FillComboBoxWithValues()
         {
             try
             {
                 using StreamReader sr = new StreamReader(
-                    @"X:\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizzor.txt");
+                    @"C:\git\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizzor.txt");
 
                 while (!sr.EndOfStream)
                 {
@@ -47,7 +47,7 @@ namespace WpfPizzaOrder
         }
 
         // =========================
-        // Hämta valt pris
+        // Returnerar pris beroende på vald storlek
         // =========================
         private decimal GetSelectedSizePrice()
         {
@@ -62,34 +62,34 @@ namespace WpfPizzaOrder
         // =========================
         private void cmdAddPizza_Click(object sender, RoutedEventArgs e)
         {
-            if (cmbPizza.SelectedIndex == -1)
+            if (cmbPizza.SelectedIndex == -1)       // Kontroll: pizza vald?
             {
-                MessageBox.Show("Välj en pizza.");
+                MessageBox.Show("Välj en pizza.");  
                 return;
             }
 
-            decimal price = GetSelectedSizePrice();
+            decimal price = GetSelectedSizePrice(); // Kontroll: storlek vald?
             if (price == 0)
             {
                 MessageBox.Show("Välj storlek.");
                 return;
             }
 
-            string size =
+            string size =                           // Bestäm text för vald storlek
                 rbSmall.IsChecked == true ? "Small" :
                 rbMedium.IsChecked == true ? "Medium" :
                 "Large";
 
-            string pizza = cmbPizza.SelectedItem.ToString();
-            string orderRow = $"{pizza} ({size}) - {price} kr";
+            string pizza = cmbPizza.SelectedItem.ToString();        // Hämta pizzanamnet
+            string orderRow = $"{pizza} ({size}) - {price} kr";     // Skapa text för listan
 
-            lstOrder.Items.Add(orderRow);
+            lstOrder.Items.Add(orderRow);   // Lägg till i orderlistan
 
-            totalPrice += price;
+            totalPrice += price;            // Uppdatera totalsumma och antal
             pizzaCount++;
 
-            cmdSendOrder.IsEnabled = true;
-            UpdateSummary();
+            cmdSendOrder.IsEnabled = true;  // Aktivera skicka-knappen
+            UpdateSummary();                // Uppdatera summering
         }
 
         // =========================
@@ -106,12 +106,12 @@ namespace WpfPizzaOrder
             decimal price = decimal.Parse(
                 item.Substring(index + 1).Replace("kr", "").Trim());
 
-            totalPrice -= price;
-            pizzaCount--;
+            totalPrice -= price;    // Uppdatera totalsumman
+            pizzaCount--;           // Minska antal
 
-            lstOrder.Items.Remove(lstOrder.SelectedItem);
+            lstOrder.Items.Remove(lstOrder.SelectedItem);   // Ta bort från listan
 
-            if (pizzaCount == 0)
+            if (pizzaCount == 0)    // Inaktivera skicka-knapp om ordern är tom
                 cmdSendOrder.IsEnabled = false;
 
             UpdateSummary();

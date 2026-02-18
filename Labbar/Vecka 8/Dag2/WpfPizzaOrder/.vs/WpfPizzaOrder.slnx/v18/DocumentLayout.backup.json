@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\",
+  "WorkspaceRootPath": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|solutionrelative:wpfpizzaorder\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|solutionrelative:wpfpizzaorder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|solutionrelative:wpfpizzaorder\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|solutionrelative:wpfpizzaorder\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag2\\wpfpizzaorder\\wpfpizzaorder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1DF2C11C-814A-1177-8F0D-B8635BB826CB}|WpfPizzaOrder\\WpfPizzaOrder.csproj|solutionrelative:wpfpizzaorder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\App.xaml",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\App.xaml",
               "RelativeDocumentMoniker": "WpfPizzaOrder\\App.xaml",
-              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\App.xaml",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\App.xaml",
               "RelativeToolTip": "WpfPizzaOrder\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-17T19:18:32.908Z",
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfPizzaOrder\\MainWindow.xaml",
-              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml",
               "RelativeToolTip": "WpfPizzaOrder\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-17T13:09:00.802Z",
@@ -50,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfPizzaOrder\\MainWindow.xaml.cs",
-              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag2\\WpfPizzaOrder\\WpfPizzaOrder\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfPizzaOrder\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCMAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T13:09:00.273Z"
             }

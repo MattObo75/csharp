@@ -242,13 +242,9 @@ namespace WpfPizzaOrder
     }
 }
 
-<Style TargetType="Background">
-         <Setter.Value>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <LinearGradientBrush.GradientStops>
-                        <GradientStop Offset="0.0" Color="#90DDDD" />
-                        <GradientStop Offset="1.0" Color="#5BFFFF" />
-                    </LinearGradientBrush.GradientStops>
-                </LinearGradientBrush>
-         </Setter.Value>
-</Style>
+<Image Width="150">
+  <Image.Source>    
+    <BitmapImage DecodePixelWidth="120"  
+     UriSource="X:\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizza.png" />
+  </Image.Source>
+</Image>

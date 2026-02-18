@@ -2,10 +2,11 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Pizzabeställning" Height="800" Width="550" Background="#FFD8D5D5">
-    
 
+    <!-- Grid används som layoutsystem -->
     <Grid Margin="20">
         <Grid.RowDefinitions>
+            <!-- Definierar radernas höjd -->
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -14,22 +15,22 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>              
-
+        </Grid.RowDefinitions>
+        <!-- Titel -->
         <Label Content="Pizzabeställning"
                FontSize="18"
                FontWeight="Bold"
                HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        
+        <!-- Pizza bild -->
         <Image Width="150" Opacity="0.8">
             <Image.Source>
             <BitmapImage DecodePixelWidth="120"  
-            UriSource="X:\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizza.png" />
+            UriSource="C:\git\source\c#\Labbar\Vecka 8\Dag2\WpfPizzaOrder\pizza.png" />
             </Image.Source>
         </Image>
 
 
-        <!-- Storlek -->
+        <!-- Välj storlek -->
         <GroupBox Header="Välj storlek" Grid.Row="1" Margin="0,10,0,10" FontSize="14">
             <StackPanel Margin="10">
                 <RadioButton x:Name="rbSmall" Content="Small (65 kr)"/>
@@ -38,37 +39,37 @@
             </StackPanel>
         </GroupBox>
 
-        <!-- Pizza -->
+        <!-- Välj pizza från ComboBox -->
         <GroupBox Header="Välj pizza" Grid.Row="2" FontSize="14">
             <ComboBox x:Name="cmbPizza" Height="30" Margin="10"/>
         </GroupBox>
 
-        <!-- Lägg till -->
+        <!-- Lägg till pizza i ordern -->
         <Button x:Name="cmdAddPizza"
                 Content="Lägg till"
                 Grid.Row="3"
                 Height="35"
                 Click="cmdAddPizza_Click" FontSize="14"/>
 
-        <!-- Orderlista -->
+        <!-- Lista med pizzor i ordern -->
         <ListBox x:Name="lstOrder"
                  Grid.Row="4"
                  Margin="0,10"/>
 
-        <!-- Ta bort -->
+        <!-- Ta bort vald pizza -->
         <Button Content="Ta bort vald pizza"
                 Grid.Row="5"
                 Height="35"
                 Click="cmdRemovePizza_Click" FontSize="14"/>
 
-        <!-- Summering -->
+        <!-- Summering av order -->
         <TextBlock x:Name="txtSummary"
                    Grid.Row="6"
                    FontSize="14"
                    FontWeight="Bold"
                    Margin="0,10"/>
 
-        <!-- Knappar -->
+        <!-- Kontrollknappar -->
         <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="cmdSendOrder"
                     Content="Skicka beställning"
@@ -76,11 +77,11 @@
                     Margin="0,0,10,0"
                     Click="cmdSendOrder_Click"
                     IsEnabled="False" FontSize="14"/>
-
+            <!-- Rensa allt -->
             <Button Content="Rensa"
                     Width="100"
                     Click="cmdClear_Click" FontSize="14"/>
-
+            <!-- Stäng programmet -->
             <Button Content="Avsluta"
                     Width="100"
                     Margin="10,0,0,0"
