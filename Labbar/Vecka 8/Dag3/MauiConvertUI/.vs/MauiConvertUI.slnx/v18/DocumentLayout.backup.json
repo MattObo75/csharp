@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag3\\mauiconvertui\\mauiconvertui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|solutionrelative:mauiconvertui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag3\\mauiconvertui\\mauiconvertui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|solutionrelative:mauiconvertui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag3\\mauiconvertui\\mauiconvertui\\viewmodels\\converterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|solutionrelative:mauiconvertui\\viewmodels\\converterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|c:\\git\\source\\c#\\labbar\\vecka 8\\dag3\\mauiconvertui\\mauiconvertui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91354EB9-2F73-A60A-C742-AC18E72A3FEA}|MauiConvertUI\\MauiConvertUI.csproj|solutionrelative:mauiconvertui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiConvertUI\\MainPage.xaml.cs",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MainPage.xaml.cs",
+              "RelativeToolTip": "MauiConvertUI\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:51:04.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MauiConvertUI\\MainPage.xaml",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MainPage.xaml",
+              "RelativeToolTip": "MauiConvertUI\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-18T10:30:06.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConverterViewModel.cs",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\ViewModels\\ConverterViewModel.cs",
+              "RelativeDocumentMoniker": "MauiConvertUI\\ViewModels\\ConverterViewModel.cs",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\ViewModels\\ConverterViewModel.cs",
+              "RelativeToolTip": "MauiConvertUI\\ViewModels\\ConverterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T11:49:26.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiConvertUI\\MauiProgram.cs",
+              "ToolTip": "C:\\git\\source\\c#\\Labbar\\Vecka 8\\Dag3\\MauiConvertUI\\MauiConvertUI\\MauiProgram.cs",
+              "RelativeToolTip": "MauiConvertUI\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T11:12:33.24Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

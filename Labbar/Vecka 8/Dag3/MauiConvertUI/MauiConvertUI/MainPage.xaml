@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MauiConvertUI.ViewModels"
+             x:Class="MauiConvertUI.MainPage"
+             Title="Omvandlare" BackgroundImageSource="arrows.png">
+
+    <!-- Sätt BindingContext direkt i XAML -->
+    <ContentPage.BindingContext>
+        <vm:ConverterViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label
+                Text="Feet ↔ Meter Omvandlare"
+                FontSize="24"
+                HorizontalOptions="Center" />
+
+            <Entry 
+                Text="{Binding InputValue}"
+                Placeholder="Ange värde"
+                Keyboard="Numeric" />
+
+            <Picker
+                Title="Välj omvandling"
+                ItemsSource="{Binding ConversionOptions}"
+                SelectedItem="{Binding SelectedConversion}" />
+
+            <Button
+                Text="Konvertera"
+                Command="{Binding ConvertCommand}" />
+            <!--
+            <Button
+                Text="Feet till Meter"
+                Command="{Binding FeetToMeterCommand}" />
+
+            <Button
+                Text="Meter till Feet"
+               Command="{Binding MeterToFeetCommand}" />
+            -->
+            <!-- Historik -->
+            <Label
+                Text="Historik:"
+                FontSize="18"
+                FontAttributes="Bold" />
+
+            <CollectionView
+                ItemsSource="{Binding History}"
+                HeightRequest="200">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                        <Label
+                Text="{Binding}"
+                FontSize="16"
+                TextColor="Blue" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
