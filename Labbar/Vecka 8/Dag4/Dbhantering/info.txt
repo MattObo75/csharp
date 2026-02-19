@@ -1,0 +1,215 @@
+Nedan visas C# WPF kod, med koppling mot PostgreSQL databas. Skriv koden för knappen "ReportButton", alltså metoden ReportButton_Click. Metoden ska generera en rapport som pdf baserat på resultatet i datagriden "ResultDataGrid" (om möjligt). Visa felmeddelande om datagriden är tom.
+MainWindow.xaml:
+<Window x:Class="Dbhantering.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dbhantering"
+        mc:Ignorable="d"
+        Title="Queries mot PostgreSQL databas" Height="600" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Textruta som visar connection -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+            <Label x:Name="lblDatabase" Content="Databas:" HorizontalAlignment="Left" />
+            <TextBlock x:Name="showDatabase" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
+        </StackPanel>
+
+        <!-- ComboBox för tabeller -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+            <TextBlock Text="Välj tabell: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox x:Name="TablesComboBox" Width="200" SelectionChanged="TablesComboBox_SelectionChanged"/>
+        </StackPanel>
+
+        <!-- Knapp för reporter -->
+        <Button x:Name="ReportButton" Grid.Row="1" Grid.Column="1" Content="Skapa rapport" Width="150" Height="30" Margin="0,0,5,5" Click="ReportButton_Click" HorizontalAlignment="Right"/>
+        
+        <!-- ComboBox för att välja query -->
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Välj query: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox x:Name="QueryComboBox" Width="200" Margin="0,0,0,5" SelectionChanged="TablesComboBox_SelectionChanged"/>
+        </StackPanel>
+
+        <!-- Knapp för avsluta -->
+        <Button x:Name="CloseButton" Grid.Row="2" Grid.Column="1" Content="Avsluta" Width="150" Height="30" Margin="0,0,5,5" Click="CloseButton_Click" HorizontalAlignment="Right"/>
+        
+        <!-- TextBox för SQL -->
+        <TextBox x:Name="QueryTextBox" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Height="100" Margin="0,5,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" />
+
+        <!-- Knapp för körning -->
+        <Button x:Name="RunButton" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Content="Kör Fråga" Width="150" Height="30" Margin="0,10,0,10" Click="RunButton_Click"/>
+
+        <!-- DataGrid för resultat -->
+        <DataGrid x:Name="ResultDataGrid" Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="True" />
+    </Grid>
+</Window>
+
+MainWindow.xaml.cs:
+using Npgsql; // PostgreSQL data provider
+using System.Data;
+using System.IO;
+using System.Net.NetworkInformation;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Dbhantering
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {     
+        // Byt till din databas info, postgres är allas användarnamn
+        // Om du har lösenord, fortsätt med Password=ditt_lösenord
+        private string connectionString =
+            "Host=192.168.0.249;Port=5432;Username=postgres;Database=zoo_db";
+        public MainWindow()
+        {
+            InitializeComponent();
+            LoadTables();
+            FillComboBoxWithValues();
+        }
+        private void RunButton_Click(object sender, RoutedEventArgs e)
+        {
+            string query = QueryTextBox.Text;
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                MessageBox.Show("Skriv en fråga först.");
+                return;
+            }
+            try
+            {
+                using (var conn = new NpgsqlConnection(connectionString))
+                {
+                    conn.Open();
+                    using (var cmd = new NpgsqlCommand(query, conn))
+                    {
+                        using (var adapter = new NpgsqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            ResultDataGrid.ItemsSource = dt.DefaultView;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fel: {ex.Message}");
+            }
+        }
+        // Ladda alla tabeller i databasen
+        private void LoadTables()
+        {
+            try
+            {
+                using (var conn = new NpgsqlConnection(connectionString))
+                {
+                    conn.Open();
+                    var cmdSelect = new NpgsqlCommand(
+                    "SELECT table_name FROM information_schema.tables WHERE table_schema='public' ORDER BY table_name;", conn);
+                    using (var readerSelect = cmdSelect.ExecuteReader())
+                    {
+                        while (readerSelect.Read())
+                        {
+                            TablesComboBox.Items.Add(readerSelect.GetString(0));
+                        }
+                    }
+
+                    showDatabase.Text = conn.Database + ", username@host: " + conn.UserName + "@" + conn.Host; 
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fel vid hämtning av tabeller: {ex.Message}");
+            }
+        }
+        // När användaren väljer en tabell
+        private void TablesComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (TablesComboBox.SelectedItem != null && QueryComboBox.SelectedItem != null)
+            {
+                string selectedQuery = QueryComboBox.SelectedItem.ToString();
+                string selectedTable = TablesComboBox.SelectedItem.ToString();
+
+                switch (selectedQuery)
+                {
+                    case "SELECT":
+                        QueryTextBox.Text = $"{selectedQuery} kolumn\nFROM \"{selectedTable}\"\nWHERE villkor;";
+                        break;
+                    case "UPDATE":
+                        QueryTextBox.Text = $"{selectedQuery} \"{selectedTable}\"\nSET kolumn\nWHERE villkor;";
+                        break;
+                    case "DELETE":
+                        QueryTextBox.Text = $"{selectedQuery} FROM \"{selectedTable}\"\nWHERE villkor;";
+                        break;
+                    case "CREATE TABLE":
+                        QueryTextBox.Text = $"{selectedQuery} \"{selectedTable}\" (\nkeys\n);";
+                        break;
+                }
+            }
+
+            if (TablesComboBox.SelectedItem != null && QueryComboBox.SelectedItem == null)
+            {
+                string selectedTable = TablesComboBox.SelectedItem.ToString();
+                QueryTextBox.Text = $"\"{selectedTable}\";";
+            }
+
+            
+        }
+
+        public void FillComboBoxWithValues()
+        {
+            try
+            {
+                string[] queryText = ["SELECT","UPDATE","DELETE","CREATE TABLE"]; 
+                
+                //skriver ut arrayen:
+                string output = string.Empty;
+                foreach (var item in queryText)
+                {
+                    if (item != null)
+                    {
+                        output += item + "\n";
+                        QueryComboBox.Items.Add(item);
+                    }
+                }
+                //MessageBox.Show(output);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+        private void ReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Implementera logiken för att generera en rapport baserat på användarens val
+        }
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+    }
+}

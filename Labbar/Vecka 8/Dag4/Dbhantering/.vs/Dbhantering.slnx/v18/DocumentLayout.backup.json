@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag4\\dbhantering\\dbhantering\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|solutionrelative:dbhantering\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag4\\dbhantering\\dbhantering\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|solutionrelative:dbhantering\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|x:\\source\\c#\\labbar\\vecka 8\\dag4\\dbhantering\\dbhantering\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5FF7A7F0-AF36-2997-54F9-3ABB60A763D5}|Dbhantering\\Dbhantering.csproj|solutionrelative:dbhantering\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\App.xaml",
+              "RelativeDocumentMoniker": "Dbhantering\\App.xaml",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\App.xaml",
+              "RelativeToolTip": "Dbhantering\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T21:56:24.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Dbhantering\\MainWindow.xaml",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\MainWindow.xaml",
+              "RelativeToolTip": "Dbhantering\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T08:46:22.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Dbhantering\\MainWindow.xaml.cs",
+              "ToolTip": "X:\\source\\c#\\Labbar\\Vecka 8\\Dag4\\Dbhantering\\Dbhantering\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Dbhantering\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAgwPgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T08:46:21.666Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
