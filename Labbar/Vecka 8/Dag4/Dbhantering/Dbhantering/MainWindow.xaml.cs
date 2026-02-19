@@ -83,8 +83,7 @@ namespace Dbhantering
                         }
                     }
 
-                    showDatabase.Text = conn.Database + ", username@host: " + conn.UserName + "@" + conn.Host; 
-                    
+                    showDatabase.Text = conn.Database + ", username@host: " + conn.UserName + "@" + conn.Host;                     
                 }
             }
             catch (Exception ex)
@@ -121,9 +120,7 @@ namespace Dbhantering
             {
                 string selectedTable = TablesComboBox.SelectedItem.ToString();
                 QueryTextBox.Text = $"\"{selectedTable}\";";
-            }
-
-            
+            }            
         }
 
         public void FillComboBoxWithValues()
@@ -242,11 +239,6 @@ namespace Dbhantering
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-        }
-
-        private void ResultDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
